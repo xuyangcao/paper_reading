@@ -9,6 +9,7 @@
 ### Machine Learning Techniques for Biomedical Image Segmentation: An Overview of Technical Aspects and Introduction to State-of-Art Applications
 
 **Comparision between Traditional Methods and Deep Learning based Methods** 
+
 | Methods | Advantage | Disadvantage |
 | ------- | --------- | ------------ |
 | Gredient based methods | Fast | Prone to image noise and artifacts that result in missing or diffuse organ boundaries. |
@@ -17,6 +18,7 @@
 | Deep learning methods | Automatic feature extration scheme instead of manual feature extraction, More accurate | Large computational cost, and large amount of data |
 
 **Deep Learning based Methods**
+
 | Methods | Advantage | Disadvantage |
 | ------- | --------- | ------------ |
 | Patch based CNN | Alleviate the coputational burden | 1. loss of spatial infortation<br> 2. too small patchs means less information could be extracted<br> 3. may increase training time due to the duplicated computation of pixels |
