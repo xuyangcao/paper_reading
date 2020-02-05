@@ -2,7 +2,9 @@
   - [2019](#2019)
     - [Machine Learning Techniques for Biomedical Image Segmentation: An Overview of Technical Aspects and Introduction to State-of-Art Applications](#machine-learning-techniques-for-biomedical-image-segmentation-an-overview-of-technical-aspects-and-introduction-to-state-of-art-applications)
     - [Understanding Deep Learning Techniques for Image Segmentation](#understanding-deep-learning-techniques-for-image-segmentation)
+    - [Deep Semantic Segmentation of Natural and Medical Images: A Review](#deep-semantic-segmentation-of-natural-and-medical-images-a-review)
 - [Segmentation](#segmentation)
+- [Data Augmentation](#data-augmentation)
 - [Detection](#detection)
 
 # Review 
@@ -59,6 +61,10 @@ segmentation is a process of assigning a label to each pixel in the image such t
 | **Advantage** |  | 1. automated feature learning |
 | **Disadvantage** | 1. the results dependent on the quality of feature extracted by the domain experts<br> 2. humans are bound to miss latent or abstract features for image segmentation |
 
+### Deep Semantic Segmentation of Natural and Medical Images: A Review
+
+**Categories:**
+![](./images/03_Categories.png)
 
 
 
@@ -69,5 +75,6 @@ segmentation is a process of assigning a label to each pixel in the image such t
 
 
 # Segmentation
+# Data Augmentation
 
 # Detection
