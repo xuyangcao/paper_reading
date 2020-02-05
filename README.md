@@ -1,6 +1,7 @@
 - [Review](#review)
   - [2019](#2019)
     - [Machine Learning Techniques for Biomedical Image Segmentation: An Overview of Technical Aspects and Introduction to State-of-Art Applications](#machine-learning-techniques-for-biomedical-image-segmentation-an-overview-of-technical-aspects-and-introduction-to-state-of-art-applications)
+    - [Understanding Deep Learning Techniques for Image Segmentation](#understanding-deep-learning-techniques-for-image-segmentation)
 - [Segmentation](#segmentation)
 - [Detection](#detection)
 
@@ -30,6 +31,33 @@
 | Requires a lot of Hyperprameter Tuning | None |
 
 
+
+### Understanding Deep Learning Techniques for Image Segmentation
+
+**Defination:**
+
+- Image segmentation can be defined as a specific image processing technique which is used to divide an image into two or more meaningful regions.
+- Image segmentation can also be seen as a process of defining boundaries between separate semantic entities in an image.
+-  From a more technical perspective, image
+segmentation is a process of assigning a label to each pixel in the image such that pixels with the same label are connected with respect to some **visual** or **semantic** property
+
+**Categories**
+
+| Categories | Task | Notes |
+| ---------- | ---- | ----- |
+| Semantic Segmentation | Each pixel is classified into one of the predefined set of classes such that pixels belonging to the same class belongs to an unique semantic entity in the image. | The semantics depends on the **data** and the **problem** that needs to be addressed |
+| Saliency Detection | focusing on the most important object in a scene|
+
+**Application**
+
+![](images/Application.png)
+
+**Comparization**
+
+|   | Traditional Methods | Deep Learning Based Methods |
+| - | ------------------- | --------------------------- |
+| **Advantage** |  | 1. automated feature learning |
+| **Disadvantage** | 1. the results dependent on the quality of feature extracted by the domain experts<br> 2. humans are bound to miss latent or abstract features for image segmentation |
 
 
 
