@@ -79,13 +79,8 @@ segmentation is a process of assigning a label to each pixel in the image such t
 **Potential Future Directions**
 
 - Going beyond pixel intensity-based scene understanding via incorporating prior knowledge.
-- 
-
-
-
-
-
-
+- Creating large 2D and 3D publicly available medical benchmark datasets for semantic image segmentation such as the Medical Segmentation Decathlon.
+- Exploring reinforcement learning approaches for semantic (medical) image segmentation to mimic the way human does delineation
 
 
 
