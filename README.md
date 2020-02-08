@@ -10,6 +10,8 @@
     - [Maithra Raghu, Chiyuan Zhang, Jon M. Kleinberg, Samy Bengio. Transfusion: Understanding Transfer Learning for Medical Imaging. NeurIPS 2019: 3342-3352](#maithra-raghu-chiyuan-zhang-jon-m-kleinberg-samy-bengio-transfusion-understanding-transfer-learning-for-medical-imaging-neurips-2019-3342-3352)
   - [Uncertainty Theory and Applications](#uncertainty-theory-and-applications)
     - [A. Jungo and M. Reyes, “Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2019, Cham, 2019, pp. 48–56, doi: 10.1007/978-3-030-32245-8_6.](#a-jungo-and-m-reyes-assessing-reliability-and-challenges-of-uncertainty-estimations-for-medical-image-segmentation-in-medical-image-computing-and-computer-assisted-intervention-%e2%80%93-miccai-2019-cham-2019-pp-48%e2%80%9356-doi-101007978-3-030-32245-86)
+  - [Boundary and Distance Map](#boundary-and-distance-map)
+    - [Shape-Aware Complementary-Task Learning for Multi-Organ Segmentation, MICCAI 2019](#shape-aware-complementary-task-learning-for-multi-organ-segmentation-miccai-2019)
 
 # Review 
 ## 2019
@@ -187,3 +189,26 @@ segmentation and we make practical recommendations for their evaluation.
 performance. Even though we succeeded in building similarly performing models,
 their differences cannot be fully decoupled and neglected when analyzing the
 uncertainty
+
+
+## Boundary and Distance Map
+### Shape-Aware Complementary-Task Learning for Multi-Organ Segmentation, MICCAI 2019
+
+**Problem**
+- In representation learning, auxiliary-tasks are often designed to leverage free-of-cost supervision which is derived from existing target labels
+- The purpose of including auxiliary tasks is not only to learn a shared representation but also to learn efficiently by solving the common *meta-objective*
+
+
+**Contribuction**
+- We introduce two complementary-tasks in context of organ-specific shapeprior learning. We show that the inclusion of these complementary-tasks
+alongside the segmentation task improves its overall performance.
+
+![](./images/shape-aware-network.png)
+
+**Result and Conclusion**
+
+![](./images/shape-aware-result-1.png)
+
+![](./images/shape-aware-result-2.png)
+
+-  In medical image segmentation where large data sets are scarce and corresponding dense annotation is expensive, designing complementary-task by leveraging existing target label could be beneficial to learn a generalized representation
