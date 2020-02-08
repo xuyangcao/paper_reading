@@ -8,6 +8,8 @@
     - [K. Abhishek and G. Hamarneh. Mask2Lesion: Mask-Constrained Adversarial Skin Lesion Image Synthesis[C]. Simulation and Synthesis in Medical Imaging, Cham, 2019:71–80.](#k-abhishek-and-g-hamarneh-mask2lesion-mask-constrained-adversarial-skin-lesion-image-synthesisc-simulation-and-synthesis-in-medical-imaging-cham-201971%e2%80%9380)
   - [Transfer learning](#transfer-learning)
     - [Maithra Raghu, Chiyuan Zhang, Jon M. Kleinberg, Samy Bengio. Transfusion: Understanding Transfer Learning for Medical Imaging. NeurIPS 2019: 3342-3352](#maithra-raghu-chiyuan-zhang-jon-m-kleinberg-samy-bengio-transfusion-understanding-transfer-learning-for-medical-imaging-neurips-2019-3342-3352)
+  - [Uncertainty Theory and Applications](#uncertainty-theory-and-applications)
+    - [A. Jungo and M. Reyes, “Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2019, Cham, 2019, pp. 48–56, doi: 10.1007/978-3-030-32245-8_6.](#a-jungo-and-m-reyes-assessing-reliability-and-challenges-of-uncertainty-estimations-for-medical-image-segmentation-in-medical-image-computing-and-computer-assisted-intervention-%e2%80%93-miccai-2019-cham-2019-pp-48%e2%80%9356-doi-101007978-3-030-32245-86)
 
 # Review 
 ## 2019
@@ -80,7 +82,7 @@ segmentation is a process of assigning a label to each pixel in the image such t
 
 - Going beyond pixel intensity-based scene understanding via incorporating prior knowledge.
 - Creating large 2D and 3D publicly available medical benchmark datasets for semantic image segmentation such as the Medical Segmentation Decathlon.
-- Exploring reinforcement learning approaches for semantic (medical) image segmentation to mimic the way human does delineation
+- Exploring reinforcement learning approaches for semantic (medical) image segmentation to mimic the way human does delineation.
 
 
 
@@ -140,3 +142,48 @@ don't know
 - in all of these cases, transfer does not signifcantly help performance
 - smaller, simpler convolutional architectures perform comparably to standard ImageNet models
 - ImageNet performance is not predictive of medical performance.
+
+
+## Uncertainty Theory and Applications
+### A. Jungo and M. Reyes, “Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2019, Cham, 2019, pp. 48–56, doi: 10.1007/978-3-030-32245-8_6.
+
+**Problem**
+- despite improvements in accuracy, the robustness aspects of these systems call for significant improvements for a successful clinical integration of these technologies, where each data point corresponds to an individual patient
+- This highlights the importance of having mechanisms to effectively monitor computer results in order to detect and react on system’s failures at the patient level
+- This information in turn can be used to leverage the decision-making process of a user, as well as to enable time-effective corrections
+of computer results by for instance, focusing on areas of high uncertainty.
+
+*Different Levels of Uncertainty*
+| Level | info |
+| ----- | ---- |
+| Pixel (Volex) Level |  1. provides a measure of uncertainty for the predicted class of each voxel<br> 2. providing additional information to foster comprehensibility or as guidance for correction tasks |
+| Instance (Object) Level | application: reduce the false discovery rate of brain lesions and cells |
+| Subject (Patient) Level | 1. informs us whether the segmentation task was successful (e.g., above a certain metric)<br> 2. Having information about success or failure would be sufficient for many tasks, e.g., high-throughput analysis or selection of cases for expert review |
+
+
+**Contribuction**
+- Different approaches have been proposed to quantify uncertainties in deep
+learning models. including:
+    - Softmax Entropy
+    - MC dropout
+    - Aleatoric uncertainty
+    - Ensembles
+    - Auxiliary network
+- we evaluated common uncertainty measures with respect to their reliability, their benefit, and limitations.
+- we analyzed the requirements for uncertainties in medical image
+segmentation and we make practical recommendations for their evaluation.
+
+**Result and Conclusion**
+![](./image/../images/assessing-uncertainty-results.png)
+
+- (Important) Results show that current uncertainty methods perform similarly and although they are well-calibrated at the dataset level, they tend to be miscalibrated at subject-level
+- The results also revealed that methods based on MC dropout are heavily dependent on the influence of dropout on the segmentation performance
+- From our experiments we can conclude that methods that aggregate voxel-wise uncertainty to provide subject-level estimations are not reliable enough to be used as a mechanism to detect failed segmentations.
+-  The aleatoric method fails to produce uncertainty at the locations of segmentation errors (i.e., low U-E) and is therefore unable to improve segmentation results through corrections
+
+**Limitation**
+- First, although the experiments were performed on two typical and  distinctive datasets, they feature large structures to segment. The findings reported herein may differ for other datasets, *especially if these consists of very small structures to be segmented*
+- Second, the assessment of the uncertainty is influenced by the segmentation
+performance. Even though we succeeded in building similarly performing models,
+their differences cannot be fully decoupled and neglected when analyzing the
+uncertainty
