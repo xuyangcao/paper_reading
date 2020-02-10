@@ -8,6 +8,8 @@
     - [K. Abhishek and G. Hamarneh. Mask2Lesion: Mask-Constrained Adversarial Skin Lesion Image Synthesis[C]. Simulation and Synthesis in Medical Imaging, Cham, 2019:71–80.](#k-abhishek-and-g-hamarneh-mask2lesion-mask-constrained-adversarial-skin-lesion-image-synthesisc-simulation-and-synthesis-in-medical-imaging-cham-201971%e2%80%9380)
   - [Transfer learning](#transfer-learning)
     - [Maithra Raghu, Chiyuan Zhang, Jon M. Kleinberg, Samy Bengio. Transfusion: Understanding Transfer Learning for Medical Imaging. NeurIPS 2019: 3342-3352](#maithra-raghu-chiyuan-zhang-jon-m-kleinberg-samy-bengio-transfusion-understanding-transfer-learning-for-medical-imaging-neurips-2019-3342-3352)
+  - [Weakly supervised segmentation](#weakly-supervised-segmentation)
+    - [DeepCut: Object Segmentation From Bounding Box Annotations Using Convolutional Neural Networks, TMI, 2017](#deepcut-object-segmentation-from-bounding-box-annotations-using-convolutional-neural-networks-tmi-2017)
   - [Uncertainty Theory and Applications](#uncertainty-theory-and-applications)
     - [A. Jungo and M. Reyes, “Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2019, Cham, 2019, pp. 48–56, doi: 10.1007/978-3-030-32245-8_6.](#a-jungo-and-m-reyes-assessing-reliability-and-challenges-of-uncertainty-estimations-for-medical-image-segmentation-in-medical-image-computing-and-computer-assisted-intervention-%e2%80%93-miccai-2019-cham-2019-pp-48%e2%80%9356-doi-101007978-3-030-32245-86)
   - [Boundary and Distance Map](#boundary-and-distance-map)
@@ -144,6 +146,36 @@ don't know
 - in all of these cases, transfer does not signifcantly help performance
 - smaller, simpler convolutional architectures perform comparably to standard ImageNet models
 - ImageNet performance is not predictive of medical performance.
+
+
+## Weakly supervised segmentation
+### DeepCut: Object Segmentation From Bounding Box Annotations Using Convolutional Neural Networks, TMI, 2017
+
+**Problem**
+- many modern medical image analysis methods that are based on machine learning rely on large amounts of annotations to properly cover the variability in the data.
+-  However, the effort for a single rater to annotate a large training set is often not feasible.
+
+**Contribution**
+- We extend the basic idea with recent advances in CNN
+modelling and propose DeepCut, a method to recover semantic
+segmentations given a database of images with corresponding
+bounding boxes.
+
+**Results**
+
+![](./images/deep_cut_architecture.png)
+
+![](./images/deep_cut_result_dsc.png)
+
+![](./images/deep_cut_result_lung.png)
+
+**Limitations**
+![](./images/deep_cut_parameter.png)
+
+- The default CRF parameters θ and ω in [19] (see Tab. I) were not appropriate for medical images and required tuning.
+- Further, the time required for training of one epoch was approximately 9 minutes and inference during testing (including CRF) was less than 8 minutes for the largest MR volume.
+- these might be modality and problem dependent, requiring adjustment when translating DeepCut to new segmentation problems.
+
 
 
 ## Uncertainty Theory and Applications
