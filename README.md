@@ -14,6 +14,8 @@
     - [A. Jungo and M. Reyes, “Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2019, Cham, 2019, pp. 48–56, doi: 10.1007/978-3-030-32245-8_6.](#a-jungo-and-m-reyes-assessing-reliability-and-challenges-of-uncertainty-estimations-for-medical-image-segmentation-in-medical-image-computing-and-computer-assisted-intervention-%e2%80%93-miccai-2019-cham-2019-pp-48%e2%80%9356-doi-101007978-3-030-32245-86)
   - [Boundary and Distance Map](#boundary-and-distance-map)
     - [Shape-Aware Complementary-Task Learning for Multi-Organ Segmentation, MICCAI 2019](#shape-aware-complementary-task-learning-for-multi-organ-segmentation-miccai-2019)
+  - [Ultrasound Image Segmentation](#ultrasound-image-segmentation)
+    - [Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation](#cascaded-fully-convolutional-networks-for-automatic-prenatal-ultrasound-image-segmentation)
 
 # Review 
 ## 2019
@@ -244,3 +246,39 @@ alongside the segmentation task improves its overall performance.
 ![](./images/shape-aware-result-2.png)
 
 -  In medical image segmentation where large data sets are scarce and corresponding dense annotation is expensive, designing complementary-task by leveraging existing target label could be beneficial to learn a generalized representation
+
+
+
+## Ultrasound Image Segmentation
+### Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation
+
+**pros and cons of ultrasound imaging**
+
+| pros | cons |
+| ---- | ---- |
+| 1. real time imaging<br> 2. low cost<br> 3. free of radiation | 1. various intensity distribuction<br> 2. boundary ambiguities<br> 3. structures deform due to different pressure|
+
+
+**Challenges**
+- Firstly, US images often present various intensity distributions due to different imaging conditions
+- Secondly, a number of factors including acoustic shadows, speckle noise and low contrast between objects and surrounding tissues cause the typical boundary ambiguities and long-span occlusion
+- Thirdly, different press sources tend to make the fetal anatomical structures deform.
+
+**Contribution**
+
+- We get a good starting point by tailoring the FCN-8s for considering both low model complexity and high segmentation
+accuracy
+- Implanting our tailored FCN into an Auto-Context scheme enhances the boundary details by dynamically exploring local context, and thus gains remarkable improvement from level to level.
+- Additionally, we provide a new perspective to the classical Auto-Context scheme with the investigation on two types of join operators.
+
+
+![](./images/casFCN_architecture.png)
+
+**Result and Conclusion**
+
+![](./images/casFCN_result_table-1.png)
+
+![](./images/casFCN_result_images.png)
+
+- The proposed casFCN framework is general and can be easily extended to
+other US image segmentation tasks.
