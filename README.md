@@ -17,6 +17,7 @@
   - [Ultrasound Image Segmentation](#ultrasound-image-segmentation)
     - [Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation, ISBI, 2017](#cascaded-fully-convolutional-networks-for-automatic-prenatal-ultrasound-image-segmentation-isbi-2017)
     - [Deep Attentive Features for Prostate Segmentation in 3D Transrectal Ultrasound](#deep-attentive-features-for-prostate-segmentation-in-3d-transrectal-ultrasound)
+    - [Channel Attention Module with Multi-scale Grid Average Pooling for Breast Cancer Segmentation in an Ultrasound Image, IEEE transections on ultrasonics, 2020](#channel-attention-module-with-multi-scale-grid-average-pooling-for-breast-cancer-segmentation-in-an-ultrasound-image-ieee-transections-on-ultrasonics-2020)
 
 # Review 
 ## 2019
@@ -316,3 +317,29 @@ refine the features at each individual layer.
 - Our key idea is to select the useful complementary
 information from the multi-level features to refine the features at each individual layer.
 - Experiments on challenging TRUS volumes show that our segmentation using deep attentive features achieves satisfactory performance. In addition, the proposed attention mechanism is a general strategy to aggregate multi-level features and has the potential to be used for other medical image segmentation and detection tasks.
+
+### Channel Attention Module with Multi-scale Grid Average Pooling for Breast Cancer Segmentation in an Ultrasound Image, IEEE transections on ultrasonics, 2020
+
+**Problem**
+-  recently proposed methods such as FCN, SegNet and U-Net still need to be further improved to provide better semantic segmentation when diagnosing breast cancer by ultrasound imaging, because of their low performance.
+- only local information within receptive fields is
+used, global information on an input image is lost during the
+process of the architectures
+
+**Contribuction**
+- we propose a novel **channel attention module** with **multi-scale grid average pooling**, that is capable of improving the performance of CNNs for breast cancer segmentation in an ultrasound image.
+- we demonstrate that a channel attention module using grid average pooling instead of global average pooling can improve segmentation performance, by using the local information of an input image
+
+![](./images/channel_attention_with_GAP.png)
+
+![](./images/channel_attention_with_GRAP.png)
+
+![](./images/channel_attention_with_MGRAP_architecture.png)
+
+
+**Result and Conclusion**
+
+![](./images/channel_attention_with_MGRAP_result.png)
+
+- The channel attention module with multi-scale grid average pooling (MSGRAP) allowed maintaining local and global information for the semantic segmentation of breast tumors in ultrasound images. In contrast, the channel attention module with global average pooling
+could only maintain global information
