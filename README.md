@@ -5,20 +5,20 @@
     - [Deep Semantic Segmentation of Natural and Medical Images: A Review](#deep-semantic-segmentation-of-natural-and-medical-images-a-review)
 - [Segmentation](#segmentation)
   - [Data Augmentation](#data-augmentation)
-    - [K. Abhishek and G. Hamarneh. Mask2Lesion: Mask-Constrained Adversarial Skin Lesion Image Synthesis[C]. Simulation and Synthesis in Medical Imaging, Cham, 2019:71–80. $\clubsuit \clubsuit$](#k-abhishek-and-g-hamarneh-mask2lesion-mask-constrained-adversarial-skin-lesion-image-synthesisc-simulation-and-synthesis-in-medical-imaging-cham-201971%e2%80%9380-mathsemanticsmrowmi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimrowannotation-encoding%22applicationx-tex%22clubsuit-clubsuitannotationsemanticsmath%e2%99%a3%e2%99%a3)
+    - [K. Abhishek and G. Hamarneh. Mask2Lesion: Mask-Constrained Adversarial Skin Lesion Image Synthesis[C]. Simulation and Synthesis in Medical Imaging, Cham, 2019:71–80.](#k-abhishek-and-g-hamarneh-mask2lesion-mask-constrained-adversarial-skin-lesion-image-synthesisc-simulation-and-synthesis-in-medical-imaging-cham-201971%e2%80%9380)
   - [Transfer learning](#transfer-learning)
-    - [Maithra Raghu, Chiyuan Zhang, Jon M. Kleinberg, Samy Bengio. Transfusion: Understanding Transfer Learning for Medical Imaging. NeurIPS 2019: 3342-3352 $\clubsuit \clubsuit \clubsuit$](#maithra-raghu-chiyuan-zhang-jon-m-kleinberg-samy-bengio-transfusion-understanding-transfer-learning-for-medical-imaging-neurips-2019-3342-3352-mathsemanticsmrowmi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimrowannotation-encoding%22applicationx-tex%22clubsuit-clubsuit-clubsuitannotationsemanticsmath%e2%99%a3%e2%99%a3%e2%99%a3)
+    - [Maithra Raghu, Chiyuan Zhang, Jon M. Kleinberg, Samy Bengio. Transfusion: Understanding Transfer Learning for Medical Imaging. NeurIPS 2019: 3342-3352](#maithra-raghu-chiyuan-zhang-jon-m-kleinberg-samy-bengio-transfusion-understanding-transfer-learning-for-medical-imaging-neurips-2019-3342-3352)
   - [Weakly supervised segmentation](#weakly-supervised-segmentation)
-    - [DeepCut: Object Segmentation From Bounding Box Annotations Using Convolutional Neural Networks, TMI, 2017 $\clubsuit \clubsuit \clubsuit$](#deepcut-object-segmentation-from-bounding-box-annotations-using-convolutional-neural-networks-tmi-2017-mathsemanticsmrowmi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimrowannotation-encoding%22applicationx-tex%22clubsuit-clubsuit-clubsuitannotationsemanticsmath%e2%99%a3%e2%99%a3%e2%99%a3)
+    - [DeepCut: Object Segmentation From Bounding Box Annotations Using Convolutional Neural Networks, TMI, 2017](#deepcut-object-segmentation-from-bounding-box-annotations-using-convolutional-neural-networks-tmi-2017)
   - [Uncertainty Theory and Applications](#uncertainty-theory-and-applications)
-    - [A. Jungo and M. Reyes, “Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2019, Cham, 2019, pp. 48–56, doi: 10.1007/978-3-030-32245-8_6. $\clubsuit \clubsuit \clubsuit\clubsuit$](#a-jungo-and-m-reyes-assessing-reliability-and-challenges-of-uncertainty-estimations-for-medical-image-segmentation-in-medical-image-computing-and-computer-assisted-intervention-%e2%80%93-miccai-2019-cham-2019-pp-48%e2%80%9356-doi-101007978-3-030-32245-86-mathsemanticsmrowmi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimrowannotation-encoding%22applicationx-tex%22clubsuit-clubsuit-clubsuitclubsuitannotationsemanticsmath%e2%99%a3%e2%99%a3%e2%99%a3%e2%99%a3)
+    - [A. Jungo and M. Reyes, “Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2019, Cham, 2019, pp. 48–56, doi: 10.1007/978-3-030-32245-8_6.](#a-jungo-and-m-reyes-assessing-reliability-and-challenges-of-uncertainty-estimations-for-medical-image-segmentation-in-medical-image-computing-and-computer-assisted-intervention-%e2%80%93-miccai-2019-cham-2019-pp-48%e2%80%9356-doi-101007978-3-030-32245-86)
   - [Boundary and Distance Map](#boundary-and-distance-map)
-    - [Shape-Aware Complementary-Task Learning for Multi-Organ Segmentation, MICCAI 2019 $\clubsuit\clubsuit\clubsuit$](#shape-aware-complementary-task-learning-for-multi-organ-segmentation-miccai-2019-mathsemanticsmrowmi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimrowannotation-encoding%22applicationx-tex%22clubsuitclubsuitclubsuitannotationsemanticsmath%e2%99%a3%e2%99%a3%e2%99%a3)
+    - [Shape-Aware Complementary-Task Learning for Multi-Organ Segmentation, MICCAI 2019](#shape-aware-complementary-task-learning-for-multi-organ-segmentation-miccai-2019)
   - [Ultrasound Image Segmentation](#ultrasound-image-segmentation)
-    - [Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation, ISBI, 2017 $\clubsuit\clubsuit\clubsuit$](#cascaded-fully-convolutional-networks-for-automatic-prenatal-ultrasound-image-segmentation-isbi-2017-mathsemanticsmrowmi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimrowannotation-encoding%22applicationx-tex%22clubsuitclubsuitclubsuitannotationsemanticsmath%e2%99%a3%e2%99%a3%e2%99%a3)
-    - [Deep Attentive Features for Prostate Segmentation in 3D Transrectal Ultrasound, TMI, 2019 $\clubsuit \clubsuit \clubsuit \clubsuit$](#deep-attentive-features-for-prostate-segmentation-in-3d-transrectal-ultrasound-tmi-2019-mathsemanticsmrowmi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimrowannotation-encoding%22applicationx-tex%22clubsuit-clubsuit-clubsuit-clubsuitannotationsemanticsmath%e2%99%a3%e2%99%a3%e2%99%a3%e2%99%a3)
-    - [Channel Attention Module with Multi-scale Grid Average Pooling for Breast Cancer Segmentation in an Ultrasound Image, IEEE transections on ultrasonics, 2020 $\clubsuit \clubsuit \clubsuit$](#channel-attention-module-with-multi-scale-grid-average-pooling-for-breast-cancer-segmentation-in-an-ultrasound-image-ieee-transections-on-ultrasonics-2020-mathsemanticsmrowmi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimrowannotation-encoding%22applicationx-tex%22clubsuit-clubsuit-clubsuitannotationsemanticsmath%e2%99%a3%e2%99%a3%e2%99%a3)
-    - [Auto-context Fully Convolutional Network for Levator Hiatus Segmentation in Ultirasound Images, ISBI 2018, $\clubsuit \clubsuit$](#auto-context-fully-convolutional-network-for-levator-hiatus-segmentation-in-ultirasound-images-isbi-2018-mathsemanticsmrowmi-mathvariant%22normal%22%e2%99%a3mimi-mathvariant%22normal%22%e2%99%a3mimrowannotation-encoding%22applicationx-tex%22clubsuit-clubsuitannotationsemanticsmath%e2%99%a3%e2%99%a3)
+    - [Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation, ISBI, 2017](#cascaded-fully-convolutional-networks-for-automatic-prenatal-ultrasound-image-segmentation-isbi-2017)
+    - [Deep Attentive Features for Prostate Segmentation in 3D Transrectal Ultrasound, TMI, 2019](#deep-attentive-features-for-prostate-segmentation-in-3d-transrectal-ultrasound-tmi-2019)
+    - [Channel Attention Module with Multi-scale Grid Average Pooling for Breast Cancer Segmentation in an Ultrasound Image, IEEE transections on ultrasonics, 2020](#channel-attention-module-with-multi-scale-grid-average-pooling-for-breast-cancer-segmentation-in-an-ultrasound-image-ieee-transections-on-ultrasonics-2020)
+    - [Auto-context Fully Convolutional Network for Levator Hiatus Segmentation in Ultirasound Images, ISBI 2018](#auto-context-fully-convolutional-network-for-levator-hiatus-segmentation-in-ultirasound-images-isbi-2018)
 
 # Review 
 ## 2019
@@ -100,7 +100,7 @@ segmentation is a process of assigning a label to each pixel in the image such t
 # Segmentation
 ## Data Augmentation
 
-### K. Abhishek and G. Hamarneh. Mask2Lesion: Mask-Constrained Adversarial Skin Lesion Image Synthesis[C]. Simulation and Synthesis in Medical Imaging, Cham, 2019:71–80. $\clubsuit \clubsuit$
+### K. Abhishek and G. Hamarneh. Mask2Lesion: Mask-Constrained Adversarial Skin Lesion Image Synthesis[C]. Simulation and Synthesis in Medical Imaging, Cham, 2019:71–80.
 
 **Contribution**
 - propose a GAN-based augmentation of the original dataset in order to improve the segmentation performance
@@ -121,7 +121,7 @@ don't know
 
 ## Transfer learning
 
-### Maithra Raghu, Chiyuan Zhang, Jon M. Kleinberg, Samy Bengio. Transfusion: Understanding Transfer Learning for Medical Imaging. NeurIPS 2019: 3342-3352 $\clubsuit \clubsuit \clubsuit$
+### Maithra Raghu, Chiyuan Zhang, Jon M. Kleinberg, Samy Bengio. Transfusion: Understanding Transfer Learning for Medical Imaging. NeurIPS 2019: 3342-3352
 
 
 **Problem**
@@ -154,7 +154,7 @@ don't know
 
 
 ## Weakly supervised segmentation
-### DeepCut: Object Segmentation From Bounding Box Annotations Using Convolutional Neural Networks, TMI, 2017 $\clubsuit \clubsuit \clubsuit$
+### DeepCut: Object Segmentation From Bounding Box Annotations Using Convolutional Neural Networks, TMI, 2017
 
 **Problem**
 - many modern medical image analysis methods that are based on machine learning rely on large amounts of annotations to properly cover the variability in the data.
@@ -184,7 +184,7 @@ bounding boxes.
 
 
 ## Uncertainty Theory and Applications
-### A. Jungo and M. Reyes, “Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2019, Cham, 2019, pp. 48–56, doi: 10.1007/978-3-030-32245-8_6. $\clubsuit \clubsuit \clubsuit\clubsuit$
+### A. Jungo and M. Reyes, “Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2019, Cham, 2019, pp. 48–56, doi: 10.1007/978-3-030-32245-8_6.
 
 **Problem**
 - despite improvements in accuracy, the robustness aspects of these systems call for significant improvements for a successful clinical integration of these technologies, where each data point corresponds to an individual patient
@@ -229,8 +229,7 @@ uncertainty
 
 
 ## Boundary and Distance Map
-### Shape-Aware Complementary-Task Learning for Multi-Organ Segmentation, MICCAI 2019 $\clubsuit\clubsuit\clubsuit$
-
+### Shape-Aware Complementary-Task Learning for Multi-Organ Segmentation, MICCAI 2019
 **Problem**
 - In representation learning, auxiliary-tasks are often designed to leverage free-of-cost supervision which is derived from existing target labels
 - The purpose of including auxiliary tasks is not only to learn a shared representation but also to learn efficiently by solving the common *meta-objective*
@@ -253,7 +252,7 @@ alongside the segmentation task improves its overall performance.
 
 
 ## Ultrasound Image Segmentation
-### Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation, ISBI, 2017 $\clubsuit\clubsuit\clubsuit$
+### Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation, ISBI, 2017
 
 **pros and cons of ultrasound imaging**
 
@@ -287,7 +286,7 @@ accuracy
 other US image segmentation tasks.
 
 
-### Deep Attentive Features for Prostate Segmentation in 3D Transrectal Ultrasound, TMI, 2019 $\clubsuit \clubsuit \clubsuit \clubsuit$
+### Deep Attentive Features for Prostate Segmentation in 3D Transrectal Ultrasound, TMI, 2019
 
 **Problem**
 - manual outlining is tedious, time-consuming and often irreproducible, even for experienced physicians.
@@ -319,7 +318,7 @@ refine the features at each individual layer.
 information from the multi-level features to refine the features at each individual layer.
 - Experiments on challenging TRUS volumes show that our segmentation using deep attentive features achieves satisfactory performance. In addition, the proposed attention mechanism is a general strategy to aggregate multi-level features and has the potential to be used for other medical image segmentation and detection tasks.
 
-### Channel Attention Module with Multi-scale Grid Average Pooling for Breast Cancer Segmentation in an Ultrasound Image, IEEE transections on ultrasonics, 2020 $\clubsuit \clubsuit \clubsuit$
+### Channel Attention Module with Multi-scale Grid Average Pooling for Breast Cancer Segmentation in an Ultrasound Image, IEEE transections on ultrasonics, 2020 
 
 **Problem**
 -  recently proposed methods such as FCN, SegNet and U-Net still need to be further improved to provide better semantic segmentation when diagnosing breast cancer by ultrasound imaging, because of their low performance.
@@ -344,7 +343,7 @@ process of the architectures
 
 - The channel attention module with multi-scale grid average pooling (MSGRAP) allowed maintaining local and global information for the semantic segmentation of breast tumors in ultrasound images. In contrast, the channel attention module with global average pooling could only maintain global information
 
-### Auto-context Fully Convolutional Network for Levator Hiatus Segmentation in Ultirasound Images, ISBI 2018, $\clubsuit \clubsuit$
+### Auto-context Fully Convolutional Network for Levator Hiatus Segmentation in Ultirasound Images, ISBI 2018
 
 **Problem**
 - Developing automatic methods for the levator hiatus (LH) segmentation is a necessary and crucial image-processing issue that needs to be resolved to achieve more objective and efficient female pelvic floor dysfunction (FPFD) examinations.
