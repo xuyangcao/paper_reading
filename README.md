@@ -6,6 +6,8 @@
 - [Segmentation](#segmentation)
   - [Data Augmentation](#data-augmentation)
     - [K. Abhishek and G. Hamarneh. Mask2Lesion: Mask-Constrained Adversarial Skin Lesion Image Synthesis[C]. Simulation and Synthesis in Medical Imaging, Cham, 2019:71–80.](#k-abhishek-and-g-hamarneh-mask2lesion-mask-constrained-adversarial-skin-lesion-image-synthesisc-simulation-and-synthesis-in-medical-imaging-cham-201971%e2%80%9380)
+  - [Semi-supervised Learning](#semi-supervised-learning)
+    - [Deep Adversarial Networks for Biomedical Image Segmentation Utilizing Unannotated Images](#deep-adversarial-networks-for-biomedical-image-segmentation-utilizing-unannotated-images)
   - [Transfer learning](#transfer-learning)
     - [Maithra Raghu, Chiyuan Zhang, Jon M. Kleinberg, Samy Bengio. Transfusion: Understanding Transfer Learning for Medical Imaging. NeurIPS 2019: 3342-3352](#maithra-raghu-chiyuan-zhang-jon-m-kleinberg-samy-bengio-transfusion-understanding-transfer-learning-for-medical-imaging-neurips-2019-3342-3352)
   - [Weakly supervised segmentation](#weakly-supervised-segmentation)
@@ -117,6 +119,32 @@ The trained mask2lesion model can generate original images using only arbitrary 
 **Cons**
 
 don't know
+
+
+## Semi-supervised Learning
+
+### Deep Adversarial Networks for Biomedical Image Segmentation Utilizing Unannotated Images
+
+**disadvantages of weakly supervised segmetation**
+- for boundbox level: drawing bounding box still requires a lot of efforts for some applications (for example, cells)
+- for instance level: there can be much fewer object classes in biomedical images than natural scene images, and image level labels may be less useful in biomedical settings since almost all the images may contain all the object classes for segmentation (e.g., cells, glands).
+
+**Contribuction**
+- propose a new adversarial training approach for producing consistently good segmentaiton for both annotated images and unannotated images.
+- the DAN based method consists a segmentaiton network and an evaluation network.
+  
+**Results**
+
+![](./images/DAN_architectures.png)
+
+![](./images/DAN.png)
+
+The segmetation result did not improve much according to this table.
+
+**Advantages and Disadvantages**
+- adv: the introduce of evaluation netowrk can help using annotated images for segmentation.
+- disadv: **the EN evaluates the segmentaiton result in a image level may be unstable, an pixel level EN is expected to construct**
+
 
 
 ## Transfer learning
