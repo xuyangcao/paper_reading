@@ -8,6 +8,7 @@
     - [K. Abhishek and G. Hamarneh. Mask2Lesion: Mask-Constrained Adversarial Skin Lesion Image Synthesis[C]. Simulation and Synthesis in Medical Imaging, Cham, 2019:71–80.](#k-abhishek-and-g-hamarneh-mask2lesion-mask-constrained-adversarial-skin-lesion-image-synthesisc-simulation-and-synthesis-in-medical-imaging-cham-201971%e2%80%9380)
   - [Semi-supervised Learning](#semi-supervised-learning)
     - [Deep Adversarial Networks for Biomedical Image Segmentation Utilizing Unannotated Images](#deep-adversarial-networks-for-biomedical-image-segmentation-utilizing-unannotated-images)
+    - [ASDNet: Attention Based Semi-supervised Deep Networks for Medical Image Segmentation](#asdnet-attention-based-semi-supervised-deep-networks-for-medical-image-segmentation)
   - [Transfer learning](#transfer-learning)
     - [Maithra Raghu, Chiyuan Zhang, Jon M. Kleinberg, Samy Bengio. Transfusion: Understanding Transfer Learning for Medical Imaging. NeurIPS 2019: 3342-3352](#maithra-raghu-chiyuan-zhang-jon-m-kleinberg-samy-bengio-transfusion-understanding-transfer-learning-for-medical-imaging-neurips-2019-3342-3352)
   - [Weakly supervised segmentation](#weakly-supervised-segmentation)
@@ -133,9 +134,11 @@ don't know
 - propose a new adversarial training approach for producing consistently good segmentaiton for both annotated images and unannotated images.
 - the DAN based method consists a segmentaiton network and an evaluation network.
   
-**Results**
-
 ![](./images/DAN_architectures.png)
+
+![](./images/DAN_EN.png)
+
+**Results**
 
 ![](./images/DAN.png)
 
@@ -144,6 +147,31 @@ The segmetation result did not improve much according to this table.
 **Advantages and Disadvantages**
 - adv: the introduce of evaluation netowrk can help using annotated images for segmentation.
 - disadv: **the EN evaluates the segmentaiton result in a image level may be unstable, an pixel level EN is expected to construct**
+
+
+### ASDNet: Attention Based Semi-supervised Deep Networks for Medical Image Segmentation
+
+**Problem**
+- 
+
+**Contribuction**
+-  we propose a fully convolutional confidence network to adversarially train the segmentation network
+-  we then propose a region-attention based semi-supervised learning strategy to include the unlabeled data for training
+
+![](images/asd_net_architecture.png)
+
+**Result and Conclusion**
+
+![](images/asd_net_result_0.png)
+
+![](images/asd_net_result_1.png)
+
+-  our proposed ASDNet has achieved significant improvement in terms of both accuracy and robustness.
+
+**Disadvantages**
+
+The input of the ealuation network takes segmetation result as input, which **overlooked the correlation between original image and it's segmentation result**
+
 
 
 
