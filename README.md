@@ -357,6 +357,8 @@ alongside the segmentation task improves its overall performance.
 | Context Module | contains extra modules laid out in cascade to encode long-range context, for example Dense CRF |  |
 | Spatial pyramid pooling | capture context at several ranges |  |
 
+![](./images/deeplab_v3_different_architectures_to_capture_multi_scale_context.png)
+
 **Contribution**
 - In this work, we mainly explore atrous convolution as a **context module** and tool for **spatial pyramid pooling.**
 - To further capture global context, we propose to augment ASPP with
