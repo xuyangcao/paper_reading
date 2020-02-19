@@ -18,7 +18,7 @@
   - [Boundary and Distance Map](#boundary-and-distance-map)
     - [Shape-Aware Complementary-Task Learning for Multi-Organ Segmentation, MICCAI 2019](#shape-aware-complementary-task-learning-for-multi-organ-segmentation-miccai-2019)
   - [Multiscale Semantic Segmentation](#multiscale-semantic-segmentation)
-    - [](#)
+    - [DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs, PAMI, 2018](#deeplab-semantic-image-segmentation-with-deep-convolutional-nets-atrous-convolution-and-fully-connected-crfs-pami-2018)
   - [Ultrasound Image Segmentation](#ultrasound-image-segmentation)
     - [Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation, ISBI, 2017](#cascaded-fully-convolutional-networks-for-automatic-prenatal-ultrasound-image-segmentation-isbi-2017)
     - [Deep Attentive Features for Prostate Segmentation in 3D Transrectal Ultrasound, TMI, 2019](#deep-attentive-features-for-prostate-segmentation-in-3d-transrectal-ultrasound-tmi-2019)
@@ -311,8 +311,34 @@ alongside the segmentation task improves its overall performance.
 
 
 ## Multiscale Semantic Segmentation
-### 
+### DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs, PAMI, 2018
 
+**Challenges and Solution**
+| Challenge | Solution |
+| --------- | -------- |
+|The first challenge is caused by the repeated combination of max-pooling and downsampling (‘striding’) performed at consecutive layers of DCNNs originally designed for image classification. | we remove the downsampling operator from the last few max-pooling layers of DCNNs and instead upsample the filters in subsequent convolutional layers, resulting in feature maps computed at a higher sampling rate |
+| The second challenge is caused by the existence of objects at multiple scales. | Instead, motivated by spatial pyramid pooling [19], [20], we propose a computationally efficient scheme of resampling a given feature layer at multiple rates prior to convolution |
+| The third challenge relates to the fact that an object-centric classifier requires invariance to spatial transformations, inherently limiting the spatial accuracy of a DCNN. | we boost our model’s ability to capture fine details by employing a fully-connected Conditional Random Field (CRF) |
+
+
+**Useful Information**
+- Compared to regular convolution with larger filters, atrous convolution allows us to effectively enlarge the field of view of filters without increasing the number of parameters or the amount of computation.
+
+**Method**
+
+![](./images/deep_lab_architecture.png)
+
+![](./images/deep_lab_atrous_convolution_1d.png)
+
+![](./images/deep_lab_atrous_convolueion_2d.png)
+
+![](./images/deep_lab_aspp_network.png)
+
+**Result and Conclusion**
+
+![](./imaegs/../images/deep_lab_result_1.png)
+
+- Our experimental results show that the proposed method significantly advances the state-of-art in several challenging datasets, including PASCAL VOC 2012 semantic image segmentation benchmark, PASCAL-Context, PASCAL-Person-Part, and Cityscapes datasets
 
 
 ## Ultrasound Image Segmentation
