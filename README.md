@@ -17,11 +17,15 @@
     - [A. Jungo and M. Reyes, “Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2019, Cham, 2019, pp. 48–56, doi: 10.1007/978-3-030-32245-8_6.](#a-jungo-and-m-reyes-assessing-reliability-and-challenges-of-uncertainty-estimations-for-medical-image-segmentation-in-medical-image-computing-and-computer-assisted-intervention-%e2%80%93-miccai-2019-cham-2019-pp-48%e2%80%9356-doi-101007978-3-030-32245-86)
   - [Boundary and Distance Map](#boundary-and-distance-map)
     - [Shape-Aware Complementary-Task Learning for Multi-Organ Segmentation, MICCAI 2019](#shape-aware-complementary-task-learning-for-multi-organ-segmentation-miccai-2019)
+  - [Multiscale Semantic Segmentation](#multiscale-semantic-segmentation)
+    - [](#)
   - [Ultrasound Image Segmentation](#ultrasound-image-segmentation)
     - [Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation, ISBI, 2017](#cascaded-fully-convolutional-networks-for-automatic-prenatal-ultrasound-image-segmentation-isbi-2017)
     - [Deep Attentive Features for Prostate Segmentation in 3D Transrectal Ultrasound, TMI, 2019](#deep-attentive-features-for-prostate-segmentation-in-3d-transrectal-ultrasound-tmi-2019)
     - [Channel Attention Module with Multi-scale Grid Average Pooling for Breast Cancer Segmentation in an Ultrasound Image, IEEE transections on ultrasonics, 2020](#channel-attention-module-with-multi-scale-grid-average-pooling-for-breast-cancer-segmentation-in-an-ultrasound-image-ieee-transections-on-ultrasonics-2020)
     - [Auto-context Fully Convolutional Network for Levator Hiatus Segmentation in Ultirasound Images, ISBI 2018](#auto-context-fully-convolutional-network-for-levator-hiatus-segmentation-in-ultirasound-images-isbi-2018)
+  - [Others](#others)
+    - [Visualizing and Understanding Convolutional Networks, ECCV, 2014](#visualizing-and-understanding-convolutional-networks-eccv-2014)
 
 # Review 
 ## 2019
@@ -306,6 +310,10 @@ alongside the segmentation task improves its overall performance.
 -  In medical image segmentation where large data sets are scarce and corresponding dense annotation is expensive, designing complementary-task by leveraging existing target label could be beneficial to learn a generalized representation
 
 
+## Multiscale Semantic Segmentation
+### 
+
+
 
 ## Ultrasound Image Segmentation
 ### Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation, ISBI, 2017
@@ -411,3 +419,26 @@ process of the architectures
 
 ![](./images/auto_context_results-1.png)
 ![](./images/auto_context_results-2.png)
+
+
+
+## Others
+### Visualizing and Understanding Convolutional Networks, ECCV, 2014
+
+**Problem**
+- Large Convolutional Network models have recently demonstrated impressive classification performance on the ImageNet benchmark
+- However there is no clear understanding of why they perform so well, or how they might be improved,  or how they might be improved.
+
+**Contribuctions**
+- We introduce a novel visualization technique that gives insight into the function of intermediate feature layers and the operation of the classifier.
+
+
+**Results and Conclusions**
+- Weight Evolution
+  ![](images/others_result_weights_evolution.png)
+- Invariance Analysis
+  ![](images/others_result_invariance_analysis.png)
+- Architecture Selection 
+  ![](./images/others_result_feature_selection.png)
+- Occlusion Sensitivity
+  ![](./images/others_result_Occlusion&#32;Sensitivity.png)
