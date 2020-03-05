@@ -1,3 +1,8 @@
+- [Uncertainty Theory and Applications](#uncertainty-theory-and-applications)
+  - [A. Jungo and M. Reyes, “Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2019, Cham, 2019, pp. 48–56, doi: 10.1007/978-3-030-32245-8_6.](#a-jungo-and-m-reyes-assessing-reliability-and-challenges-of-uncertainty-estimations-for-medical-image-segmentation-in-medical-image-computing-and-computer-assisted-intervention-%e2%80%93-miccai-2019-cham-2019-pp-48%e2%80%9356-doi-101007978-3-030-32245-86)
+
+## Uncertainty Theory and Applications
+
 ### A. Jungo and M. Reyes, “Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation,” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2019, Cham, 2019, pp. 48–56, doi: 10.1007/978-3-030-32245-8_6.
 
 **Problem**

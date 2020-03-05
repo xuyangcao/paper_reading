@@ -1,4 +1,9 @@
+- [Boundary and Distance Map](#boundary-and-distance-map)
+  - [Shape-Aware Complementary-Task Learning for Multi-Organ Segmentation, MICCAI 2019](#shape-aware-complementary-task-learning-for-multi-organ-segmentation-miccai-2019)
+
+## Boundary and Distance Map
 ### Shape-Aware Complementary-Task Learning for Multi-Organ Segmentation, MICCAI 2019
+
 **Problem**
 - In representation learning, auxiliary-tasks are often designed to leverage free-of-cost supervision which is derived from existing target labels
 - The purpose of including auxiliary tasks is not only to learn a shared representation but also to learn efficiently by solving the common *meta-objective*
