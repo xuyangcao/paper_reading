@@ -6,7 +6,7 @@
 
 ## Visual Understanding
 
-### Visualizing and Understanding Convolutional Networks, ECCV, 2014
+### [Visualizing and Understanding Convolutional Networks](https://arxiv.org/abs/1311.2901), ECCV, 2014
 
 **Problem**
 - Large Convolutional Network models have recently demonstrated impressive classification performance on the ImageNet benchmark
@@ -18,19 +18,41 @@
 
 **Results and Conclusions**
 - Weight Evolution
-  ![](../images/others/others_result_weights_evolution.png)
+  ![](../images/others/visual/others_result_weights_evolution.png)
+
 - Invariance Analysis
-  ![](../images/others/others_result_invariance_analysis.png)
+  ![](../images/others/visual/others_result_invariance_analysis.png)
+
 - Architecture Selection 
-  ![](../images/others/others_result_feature_selection.png)
+  ![](../images/others/visual/others_result_feature_selection.png)
+
 - Occlusion Sensitivity
-  ![](../images/others/others_result_Occlusion&#32;Sensitivity.png)
+  ![](../images/others/visual/others_result_Occlusion&#32;Sensitivity.png)
 
 
-### Learning How to Explain Neural networks：PatterNnet and PatternAttribution, 2017
+### [Learning How to Explain Neural networks：PatterNnet and PatternAttribution](https://arxiv.org/abs/1705.05598v2), 2017
+
+**Problem**
+
+- While deep neural networks learn efficient and powerful representations, they are often considered a ‘black-box’. 
+- On the basis of our findings, we then propose PatternNet and PatternAttribution, which alleviate these flaws.
+- Finally we apply our methods to practically relevant networks and datasets, and show that our approach produces qualitatively improved signal visualizations and attributions
 
 
+**Contribuction**
 
+- We first take a step back and analyze explanation methods in the context of the simplest neural network setting: a purely linear model and data stemming from a linear generative mode.
+- On the basis of our findings, we then propose PatternNet and PatternAttribution, which alleviate these flaws.
+-  Finally we apply our methods to practically relevant networks and datasets, and show that our approach produces qualitatively improved signal visualizations and attributions.
+
+
+**Method**
+
+![](../images/others/visual/patternnet_method_1.png)
+
+**Result**
+
+![](../images/others/visual/patternnet_result_1.png)
 
 
 ## Classification
