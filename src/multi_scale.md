@@ -2,6 +2,7 @@
   - [DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs, PAMI, 2018](#deeplab-semantic-image-segmentation-with-deep-convolutional-nets-atrous-convolution-and-fully-connected-crfs-pami-2018)
   - [Rethinking Atrous Convolution for Semantic Image Segmentation, Arxiv, 2017](#rethinking-atrous-convolution-for-semantic-image-segmentation-arxiv-2017)
   - [Understanding Convolution for Semantic Segmentation, WACV, 2018](#understanding-convolution-for-semantic-segmentation-wacv-2018)
+  - [Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation (Deeplab V3+), ECCV,  2018](#encoder-decoder-with-atrous-separable-convolution-for-semantic-image-segmentation-deeplab-v3-eccv-2018)
 
 ## Multiscale Semantic Segmentation
 
@@ -97,3 +98,31 @@ pixel-level prediction, which is able to capture and decode more detailed inform
 
 - We designed a new dense upsampling convolution (DUC) operation to enable pixel-level prediction on feature maps, and hybrid dilated convolution (HDC) to solve the gridding problem, effectively enlarging the receptive fields of the network.
 - Experimental results demonstrate the effectiveness of our framework on various semantic segmentation tasks
+
+### [Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation (Deeplab V3+)](https://arxiv.org/abs/1802.02611), ECCV,  2018
+
+**Problem**
+
+- Spatial pyramid pooling module or encode-decoder structure are used in deep neural networks for semantic segmentation task.
+- The former networks are able to encode multi-scale contextual information by probing the incoming features with filters or pooling operations at multiple rates and multiple effective fields-of-view, while the latter networks can capture sharper object boundaries by gradually recovering the spatial information
+- In this work, we propose to combine the advantages from both methods.
+
+**Contribuction**
+
+- We propose a novel encoder-decoder structure which **employs DeepLabv3 as a powerful encoder module** and a simple yet effective decoder module.
+- In our structure, **one can arbitrarily control the resolution of extracted encoder features by atrous convolution to trade-off precision and runtime**,
+which is not possible with existing encoder-decoder models.
+- We **adapt the Xception model for the segmentation task** and apply depthwise separable convolution to both ASPP module and decoder module, resulting in a faster and stronger encoder-decoder network.
+- [code available (Tensorflow)](https://github.com/tensorflow/models/tree/master/research/deeplab).
+  
+**Method**
+
+![](../images/multi_scale/deeplabv3+_method_1.png)
+
+**Result**
+
+![](../images/multi_scale/deeplabv3+_result_1.png)
+
+![](../images/multi_scale/deeplabv3+_method_1.png)
+
+- Our proposed model DeepLabv3+ employs the encoder-decoder structure where DeepLabv3 is used to encode the rich contextual information and a simple yet effective decoder module is adopted to recover the object boundaries.
