@@ -1,6 +1,7 @@
 - [Multiscale Semantic Segmentation](#multiscale-semantic-segmentation)
   - [DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs, PAMI, 2018](#deeplab-semantic-image-segmentation-with-deep-convolutional-nets-atrous-convolution-and-fully-connected-crfs-pami-2018)
   - [Rethinking Atrous Convolution for Semantic Image Segmentation, Arxiv, 2017](#rethinking-atrous-convolution-for-semantic-image-segmentation-arxiv-2017)
+  - [Understanding Convolution for Semantic Segmentation, WACV, 2018](#understanding-convolution-for-semantic-segmentation-wacv-2018)
 
 ## Multiscale Semantic Segmentation
 
@@ -72,3 +73,27 @@ image-level features, similar to [58, 95].
 
 - Atrous Spatial Pyramid Pooling
   ![](../images/multi_scale/deeplab_v3_result_3.png)
+
+
+### Understanding Convolution for Semantic Segmentation, WACV, 2018
+
+**Contribution**
+
+- First, we design dense upsampling convolution (DUC) to generate
+pixel-level prediction, which is able to capture and decode more detailed information that is generally missing in bilinear upsampling.
+- Second, we propose a hybrid dilated convolution (HDC) framework in the encoding phase. This framework 1) effectively enlarges the receptive fields (RF) of the network to aggregate global information; 2) alleviates what we call the “gridding issue”caused by the standard dilated convolution operation. 
+
+![](../images/multi_scale/hdc_architecture.png)
+
+![](../images/multi_scale/hdc_demo.png)
+
+**Results and Conclusion**
+
+![](../images/multi_scale/hdc_result_1.png)
+
+![](../images/multi_scale/hdc_result_2.png)
+
+![](../images/multi_scale/hdc_result_3.png)
+
+- We designed a new dense upsampling convolution (DUC) operation to enable pixel-level prediction on feature maps, and hybrid dilated convolution (HDC) to solve the gridding problem, effectively enlarging the receptive fields of the network.
+- Experimental results demonstrate the effectiveness of our framework on various semantic segmentation tasks

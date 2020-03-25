@@ -1,5 +1,6 @@
 - [Others](#others)
   - [Visualizing and Understanding Convolutional Networks, ECCV, 2014](#visualizing-and-understanding-convolutional-networks-eccv-2014)
+  - [Learning How TO Explain Neural networks：PatterNnet and PatternAttribution, 2017](#learning-how-to-explain-neural-networkspatternnet-and-patternattribution-2017)
 
 ## Others
 ### Visualizing and Understanding Convolutional Networks, ECCV, 2014
@@ -21,3 +22,6 @@
   ![](../images/others/others_result_feature_selection.png)
 - Occlusion Sensitivity
   ![](../images/others/others_result_Occlusion&#32;Sensitivity.png)
+
+
+  ### Learning How TO Explain Neural networks：PatterNnet and PatternAttribution, 2017
