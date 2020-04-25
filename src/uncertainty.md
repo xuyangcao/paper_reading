@@ -127,7 +127,7 @@ cancer increases
 **Results and Discusion**
 
 - We have shown that this uncertainty map can be used as additional information about where the algorithm is uncertain. 
-- Also, **we have shown that if we choose not to extract features from predictions with high uncertainty, we can signifcantly  increase the performance whilst maintaining a large proportion of the dataset.**
+- Also, **we have shown that if we choose not to extract features from predictions with high uncertainty, we can signifcantly increase the performance whilst maintaining a large proportion of the dataset.**
 - This workflow mimics clinical practice because the pathologist
 would not make a diagnosis from areas of ambiguity
 
