@@ -1,10 +1,14 @@
 - [Uncertainty Theory and Applications](#uncertainty-theory-and-applications)
-  - [Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation, MICCAI 2019, Paper](#assessing-reliability-and-challenges-of-uncertainty-estimations-for-medical-image-segmentation-miccai-2019-paper)
-  - [Exploring Uncertainty Measures in Deep Networks for Multiple Sclerosis Lesion Detection and Segmentation, MICCAI, 2018, Paper](#exploring-uncertainty-measures-in-deep-networks-for-multiple-sclerosis-lesion-detection-and-segmentation-miccai-2018-paper)
+  - [Instance Level](#instance-level)
+    - [Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation, MICCAI 2019, Paper](#assessing-reliability-and-challenges-of-uncertainty-estimations-for-medical-image-segmentation-miccai-2019-paper)
+    - [Exploring Uncertainty Measures in Deep Networks for Multiple Sclerosis Lesion Detection and Segmentation, MICCAI, 2018, Paper](#exploring-uncertainty-measures-in-deep-networks-for-multiple-sclerosis-lesion-detection-and-segmentation-miccai-2018-paper)
+    - [MILD-Net: Minimal Information Loss Dilated Network for Gland Instance Segmentation in Colon Histology Images, Medical Image Analysis, 2019, Paper](#mild-net-minimal-information-loss-dilated-network-for-gland-instance-segmentation-in-colon-histology-images-medical-image-analysis-2019-paper)
 
 
 
-## Uncertainty Theory and Applications
+# Uncertainty Theory and Applications
+
+## Instance Level
 
 ### Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation, MICCAI 2019, [Paper](https://arxiv.org/abs/1907.03338)
 
@@ -94,3 +98,37 @@ $U_m(l) = \sum_{i=p}^{q}log(U_m(i))$.
 greatly improves lesion detection accuracy for small lesions, which make up 40% of the dataset, indicating that high uncertainty does indeed reflect incorrect predictions
 
 ![](../images/uncertainty/ms_cnn_result_1.png)
+
+
+### MILD-Net: Minimal Information Loss Dilated Network for Gland Instance Segmentation in Colon Histology Images, Medical Image Analysis, 2019, [Paper](https://arxiv.org/abs/1806.01963)
+
+**Problem and Challenge**
+
+- First, a high-resolution level is needed for precise delineation of glandular boundaries, that is important when extracting morphological measurements 
+- Next, glands vary in their size and shape, especially as the grade of
+cancer increases
+- Furthermore, the output of solely the gland object gives limited information when making a diagnosis. Extra information, such as the uncertainty of a prediction and the simultaneous segmentation of additional histological components, may give additional diagnostic power.
+
+- (**About Uncertainty**) **This paper made a detailed review on deep learning based uncertainty In Section 2.3.**
+
+
+**Contribution**
+
+- we propose a **minimal information loss dilated network** that aims to solve the key challenges posed by automated gland segmentation.
+- During uncertainty quantification, we apply random transformations to the input images as a method of generating the predictive distribution
+- Furthermore, we use this measure of uncertainty to rank images that should be prioritized for pathologist annotation.
+- We propose a metric to give individual glands a score of uncertainty, based on the uncertainty map generated via random transformation sampling
+
+
+**Method**
+
+![](../images/uncertainty/mild_net_method_1.png)
+
+**Results and Discusion**
+
+- We have shown that this uncertainty map can be used as additional information about where the algorithm is uncertain. 
+- Also, **we have shown that if we choose not to extract features from predictions with high uncertainty, we can signifcantly  increase the performance whilst maintaining a large proportion of the dataset.**
+- This workflow mimics clinical practice because the pathologist
+would not make a diagnosis from areas of ambiguity
+
+![](../images/uncertainty/mild_net_result_1.png)
