@@ -1,4 +1,6 @@
 - [Uncertainty Theory and Applications](#uncertainty-theory-and-applications)
+  - [Theory](#theory)
+    - [Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning, ICML 2016, Paper](#dropout-as-a-bayesian-approximation-representing-model-uncertainty-in-deep-learning-icml-2016-paper)
   - [Instance Level](#instance-level)
     - [Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation, MICCAI 2019, Paper](#assessing-reliability-and-challenges-of-uncertainty-estimations-for-medical-image-segmentation-miccai-2019-paper)
     - [Exploring Uncertainty Measures in Deep Networks for Multiple Sclerosis Lesion Detection and Segmentation, MICCAI, 2018, Paper](#exploring-uncertainty-measures-in-deep-networks-for-multiple-sclerosis-lesion-detection-and-segmentation-miccai-2018-paper)
@@ -7,6 +9,28 @@
 
 
 # Uncertainty Theory and Applications
+
+## Theory
+
+### Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning, ICML 2016, [Paper](https://arxiv.org/abs/1506.02142)
+
+
+**Problem**
+
+- Bayesian probability theory offers us mathematically grounded tools to reason about model uncertainty, but these usually come with a prohibitive computational cost
+
+**Contribution**
+
+- In this paper we give a complete theoretical treatment of the link between Gaussian processes and dropout, and develop the tools necessary to represent uncertainty in deep learning
+- We show that the use of dropout (and its variants) in NNs can be interpreted as a Bayesian approximation of a well known probabilistic model: the Gaussian process (GP)
+
+**Result and Conclusion**
+
+![](../images/uncertainty/dropout_result.png)
+
+- We have built a probabilistic interpretation of dropout which allowed us to obtain model uncertainty out of existing deep learning models.
+- We have studied the properties of this uncertainty in detail, and demonstrated possible applications, interleaving Bayesian models and deep learning models together.
+
 
 ## Instance Level
 
