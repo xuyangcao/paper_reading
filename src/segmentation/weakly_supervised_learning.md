@@ -1,5 +1,5 @@
-
 - [Back to README](../../README.md)
+
 - [Weakly Supervised Segmentation](#weakly-supervised-segmentation)
   - [(****) DeepCut: Object Segmentation From Bounding Box Annotations Using Convolutional Neural Networks, TMI, 2017](#deepcut-object-segmentation-from-bounding-box-annotations-using-convolutional-neural-networks-tmi-2017)
 

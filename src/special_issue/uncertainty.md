@@ -1,4 +1,5 @@
 - [Back to README](../../README.md)
+
 - [Uncertainty Theory and Applications](#uncertainty-theory-and-applications)
   - [Theory](#theory)
     - [(****) Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning, ICML 2016, Paper](#dropout-as-a-bayesian-approximation-representing-model-uncertainty-in-deep-learning-icml-2016-paper)
@@ -34,7 +35,7 @@
 
 **Result and Conclusion**
 
-![](../../images/segmentation/uncertainty/dropout_result.png)
+![](../../images/special_issue/uncertainty/dropout_result.png)
 
 - We have built a probabilistic interpretation of dropout which allowed us to obtain model uncertainty out of existing deep learning models.
 - We have studied the properties of this uncertainty in detail, and demonstrated possible applications, interleaving Bayesian models and deep learning models together.
@@ -68,7 +69,7 @@ learning models. including:
 segmentation and we make practical recommendations for their evaluation.
 
 **Result and Conclusion**
-![](../../images/segmentation/uncertainty/assessing-uncertainty-results.png)
+![](../../images/special_issue/uncertainty/assessing-uncertainty-results.png)
 
 - (Important) Results show that current uncertainty methods perform similarly and although they are well-calibrated at the dataset level, they tend to be miscalibrated at subject-level
 - The results also revealed that methods based on MC dropout are heavily dependent on the influence of dropout on the segmentation performance
@@ -119,7 +120,7 @@ uncertainty
 - As noise increases, we see the segmentation error increase: also, we see the estimated volume reducing with added noise.
 - In conclusion, we have shown how to produce calibrated confidence intervals for volumetric analysis, with a non-disruptive extension to a typical deeplearning pipeline
 
-![](../../images/segmentation/uncertainty/cali_result.png)
+![](../../images/special_issue/uncertainty/cali_result.png)
 
 
 #### (***) Leveraging Uncertainty Estimates for Predicting Segmentation Quality, arXiv 2018, [Paper](https://arxiv.org/abs/1807.00502)
@@ -134,7 +135,7 @@ uncertainty
 
 **Method**
 
-![](../../images/segmentation/uncertainty/quality_method_1.png)
+![](../../images/special_issue/uncertainty/quality_method_1.png)
 
 **Results and Discusion**
 
@@ -163,7 +164,7 @@ summarize into a doubt score. The doubt score $dbt$ for one predicted image is d
 
 $$dbt = \sum_{i-1}^{N}\delta\{k_i = 1\}w_ih_i$$
 
- ![](../../images/segmentation/uncertainty/uncer_method.png)
+ ![](../../images/special_issue/uncertainty/uncer_method.png)
 
 **Result and Discussion**
 
@@ -171,8 +172,8 @@ $$dbt = \sum_{i-1}^{N}\delta\{k_i = 1\}w_ih_i$$
 - But the results revealed cases with high Dice coefficient and high doubt scores.
 - **Even though such cases were classified as false positives in terms of failure detection, their claim for review is justified**
 
-![](../../images/segmentation/uncertainty/uncer_result_1.png)
-![](../../images/segmentation/uncertainty/uncer_result_2.png)
+![](../../images/special_issue/uncertainty/uncer_result_1.png)
+![](../../images/special_issue/uncertainty/uncer_result_2.png)
 
 
 
@@ -205,7 +206,7 @@ detection errors, along with the highest uncertainty.**
 
 **Method**
 
-![](../../images/segmentation/uncertainty/ms_cnn_method.png)
+![](../../images/special_issue/uncertainty/ms_cnn_method.png)
 
 - The standard approach to generate a classification would be to compute the indicator function $1_{y_i \ge \theta}$ where the threshold $\theta$ is specified (eg. 0.9). When we use the uncertainty measure, we will additionally require that $U_m(i)$ is below another chosen threshold $\eta$ in order to produce the prediction.
 - Suppose we can generate a large set of candidate lesions. For a candidate $l$, composed of voxels $p...q$, we will compute the lesionuncertainty $U_m(l)$ from the voxel-wise uncertainties as: 
@@ -220,7 +221,7 @@ $U_m(l) = \sum_{i=p}^{q}log(U_m(i))$.
 -  Our results indicate that filtering based on uncertainty
 greatly improves lesion detection accuracy for small lesions, which make up 40% of the dataset, indicating that high uncertainty does indeed reflect incorrect predictions
 
-![](../../images/segmentation/uncertainty/ms_cnn_result_1.png)
+![](../../images/special_issue/uncertainty/ms_cnn_result_1.png)
 
 
 
@@ -247,7 +248,7 @@ cancer increases
 
 **Method**
 
-![](../../images/segmentation/uncertainty/mild_net_method_1.png)
+![](../../images/special_issue/uncertainty/mild_net_method_1.png)
 
 **Results and Discusion**
 
@@ -256,7 +257,7 @@ cancer increases
 - This workflow mimics clinical practice because the pathologist
 would not make a diagnosis from areas of ambiguity
 
-![](../../images/segmentation/uncertainty/mild_net_result_1.png)
+![](../../images/special_issue/uncertainty/mild_net_result_1.png)
 
 
 ## Domain Adaption

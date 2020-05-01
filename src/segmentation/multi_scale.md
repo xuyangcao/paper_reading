@@ -1,4 +1,5 @@
 - [Back to README](../../README.md)
+
 - [Multiscale Semantic Segmentation](#multiscale-semantic-segmentation)
   - [(****) DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs, PAMI, 2018, paper](#deeplab-semantic-image-segmentation-with-deep-convolutional-nets-atrous-convolution-and-fully-connected-crfs-pami-2018-paper)
   - [(****) Rethinking Atrous Convolution for Semantic Image Segmentation, Arxiv, 2017, paper](#rethinking-atrous-convolution-for-semantic-image-segmentation-arxiv-2017-paper)
