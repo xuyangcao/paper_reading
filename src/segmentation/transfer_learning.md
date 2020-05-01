@@ -1,9 +1,10 @@
+- [Back to README](../../README.md)
 - [Transfer Learning](#transfer-learning)
-  - [Maithra Raghu, Chiyuan Zhang, Jon M. Kleinberg, Samy Bengio. Transfusion: Understanding Transfer Learning for Medical Imaging. NeurIPS 2019: 3342-3352](#maithra-raghu-chiyuan-zhang-jon-m-kleinberg-samy-bengio-transfusion-understanding-transfer-learning-for-medical-imaging-neurips-2019-3342-3352)
+  - [(****) Transfusion: Understanding Transfer Learning for Medical Imaging. NeurIPS 2019, paper](#transfusion-understanding-transfer-learning-for-medical-imaging-neurips-2019-paper)
 
 ## Transfer Learning
 
-### Maithra Raghu, Chiyuan Zhang, Jon M. Kleinberg, Samy Bengio. Transfusion: Understanding Transfer Learning for Medical Imaging. NeurIPS 2019: 3342-3352
+### (****) Transfusion: Understanding Transfer Learning for Medical Imaging. NeurIPS 2019, [paper](https://arxiv.org/abs/1902.07208) 
 
 
 **Problem**
@@ -27,8 +28,8 @@
 
 **Results**
 
-![](../images/transfer_learning/transfusion_filter.png)
-![](../images/transfer_learning/transfusion_converge.png)
+![](../../images/segmentation/transfer_learning/transfusion_filter.png)
+![](../../images/segmentation/transfer_learning/transfusion_converge.png)
 
 - in all of these cases, transfer does not signifcantly help performance
 - smaller, simpler convolutional architectures perform comparably to standard ImageNet models

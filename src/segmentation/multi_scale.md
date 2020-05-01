@@ -1,12 +1,13 @@
+- [Back to README](../../README.md)
 - [Multiscale Semantic Segmentation](#multiscale-semantic-segmentation)
-  - [DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs, PAMI, 2018](#deeplab-semantic-image-segmentation-with-deep-convolutional-nets-atrous-convolution-and-fully-connected-crfs-pami-2018)
-  - [Rethinking Atrous Convolution for Semantic Image Segmentation, Arxiv, 2017](#rethinking-atrous-convolution-for-semantic-image-segmentation-arxiv-2017)
-  - [Understanding Convolution for Semantic Segmentation, WACV, 2018](#understanding-convolution-for-semantic-segmentation-wacv-2018)
-  - [Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation (Deeplab V3+), ECCV,  2018](#encoder-decoder-with-atrous-separable-convolution-for-semantic-image-segmentation-deeplab-v3-eccv-2018)
+  - [(****) DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs, PAMI, 2018, paper](#deeplab-semantic-image-segmentation-with-deep-convolutional-nets-atrous-convolution-and-fully-connected-crfs-pami-2018-paper)
+  - [(****) Rethinking Atrous Convolution for Semantic Image Segmentation, Arxiv, 2017, paper](#rethinking-atrous-convolution-for-semantic-image-segmentation-arxiv-2017-paper)
+  - [(***) Understanding Convolution for Semantic Segmentation, WACV, 2018, paper](#understanding-convolution-for-semantic-segmentation-wacv-2018-paper)
+  - [(****) Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation (Deeplab V3+), ECCV 2018, paper](#encoder-decoder-with-atrous-separable-convolution-for-semantic-image-segmentation-deeplab-v3-eccv-2018-paper)
 
 ## Multiscale Semantic Segmentation
 
-### DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs, PAMI, 2018
+### (****) DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs, PAMI, 2018, [paper](https://ieeexplore.ieee.org/document/7913730)
 
 **Challenges and Solution**
 | Challenge | Solution |
@@ -21,22 +22,22 @@
 
 **Method**
 
-![](../images/multi_scale/deep_lab_architecture.png)
+![](../../images/segmentation/multi_scale/deep_lab_architecture.png)
 
-![](../images/multi_scale/deep_lab_atrous_convolution_1d.png)
+![](../../images/segmentation/multi_scale/deep_lab_atrous_convolution_1d.png)
 
-![](../images/multi_scale/deep_lab_atrous_convolueion_2d.png)
+![](../../images/segmentation/multi_scale/deep_lab_atrous_convolueion_2d.png)
 
-![](../images/multi_scale/deep_lab_aspp_network.png)
+![](../../images/segmentation/multi_scale/deep_lab_aspp_network.png)
 
 **Result and Conclusion**
 
-![](../images/multi_scale/deep_lab_result_1.png)
+![](../../images/segmentation/multi_scale/deep_lab_result_1.png)
 
 - Our experimental results show that the proposed method significantly advances the state-of-art in several challenging datasets, including PASCAL VOC 2012 semantic image segmentation benchmark, PASCAL-Context, PASCAL-Person-Part, and Cityscapes datasets
 
 
-### Rethinking Atrous Convolution for Semantic Image Segmentation, Arxiv, 2017
+### (****) Rethinking Atrous Convolution for Semantic Image Segmentation, Arxiv, 2017, [paper](https://arxiv.org/abs/1706.05587)
 
 **Challenges and Problems**
 - The first one is the **reduced feature resolution** caused by consecutive pooling operations or convolution striding, which allows DCNNs to learn increasingly abstract feature representations. However, this invariance to local image transformation may impede dense prediction tasks, **where detailed spatial information is desired**. 
@@ -51,32 +52,32 @@
 | Context Module | contains extra modules laid out in cascade to encode long-range context, for example Dense CRF |  |
 | Spatial pyramid pooling | capture context at several ranges |  |
 
-![](../images/multi_scale/deeplab_v3_different_architectures_to_capture_multi_scale_context.png)
+![](../../images/segmentation/multi_scale/deeplab_v3_different_architectures_to_capture_multi_scale_context.png)
 
 **Contribution**
 - In this work, we mainly explore atrous convolution as a **context module** and tool for **spatial pyramid pooling.**
 - To further capture global context, we propose to augment ASPP with
 image-level features, similar to [58, 95].
 
-![](../images/multi_scale/deeplab_v3_architecture_0.png)
+![](../../images/segmentation/multi_scale/deeplab_v3_architecture_0.png)
 
-![](../images/multi_scale/deeplab_v3_architecture_1.png)
+![](../../images/segmentation/multi_scale/deeplab_v3_architecture_1.png)
 
 
 **Result and Conclusion**
 
 - Going deeper with atrous convolution
-  ![](../images/multi_scale/deeplab_v3_result_1.png)
+  ![](../../images/segmentation/multi_scale/deeplab_v3_result_1.png)
   This results illustrate that consecutive striding is harmful for semantic segmentation.
 
-  ![](../images/multi_scale/deeplab_v3_result_2.png)
+  ![](../../images/segmentation/multi_scale/deeplab_v3_result_2.png)
   This results show that the performance improves as more blocks are added, but the margin of improvement becomes smaller.
 
 - Atrous Spatial Pyramid Pooling
-  ![](../images/multi_scale/deeplab_v3_result_3.png)
+  ![](../../images/segmentation/multi_scale/deeplab_v3_result_3.png)
 
 
-### Understanding Convolution for Semantic Segmentation, WACV, 2018
+### (***) Understanding Convolution for Semantic Segmentation, WACV, 2018, [paper](https://arxiv.org/abs/1702.08502)
 
 **Contribution**
 
@@ -84,22 +85,22 @@ image-level features, similar to [58, 95].
 pixel-level prediction, which is able to capture and decode more detailed information that is generally missing in bilinear upsampling.
 - Second, we propose a hybrid dilated convolution (HDC) framework in the encoding phase. This framework 1) effectively enlarges the receptive fields (RF) of the network to aggregate global information; 2) alleviates what we call the “gridding issue”caused by the standard dilated convolution operation. 
 
-![](../images/multi_scale/hdc_architecture.png)
+![](../../images/segmentation/multi_scale/hdc_architecture.png)
 
-![](../images/multi_scale/hdc_demo.png)
+![](../../images/segmentation/multi_scale/hdc_demo.png)
 
 **Results and Conclusion**
 
-![](../images/multi_scale/hdc_result_1.png)
+![](../../images/segmentation/multi_scale/hdc_result_1.png)
 
-![](../images/multi_scale/hdc_result_2.png)
+![](../../images/segmentation/multi_scale/hdc_result_2.png)
 
-![](../images/multi_scale/hdc_result_3.png)
+![](../../images/segmentation/multi_scale/hdc_result_3.png)
 
 - We designed a new dense upsampling convolution (DUC) operation to enable pixel-level prediction on feature maps, and hybrid dilated convolution (HDC) to solve the gridding problem, effectively enlarging the receptive fields of the network.
 - Experimental results demonstrate the effectiveness of our framework on various semantic segmentation tasks
 
-### [Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation (Deeplab V3+)](https://arxiv.org/abs/1802.02611), ECCV,  2018
+### (****) Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation (Deeplab V3+), ECCV 2018, [paper](https://arxiv.org/abs/1802.02611)
 
 **Problem**
 
@@ -117,12 +118,12 @@ which is not possible with existing encoder-decoder models.
   
 **Method**
 
-![](../images/multi_scale/deeplabv3+_method_1.png)
+![](../../images/segmentation/multi_scale/deeplabv3+_method_1.png)
 
 **Result**
 
-![](../images/multi_scale/deeplabv3+_result_1.png)
+![](../../images/segmentation/multi_scale/deeplabv3+_result_1.png)
 
-![](../images/multi_scale/deeplabv3+_method_1.png)
+![](../../images/segmentation/multi_scale/deeplabv3+_method_1.png)
 
 - Our proposed model DeepLabv3+ employs the encoder-decoder structure where DeepLabv3 is used to encode the rich contextual information and a simple yet effective decoder module is adopted to recover the object boundaries.

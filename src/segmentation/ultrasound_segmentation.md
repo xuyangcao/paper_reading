@@ -1,3 +1,4 @@
+- [Back to README](../../README.md)
 - [Ultrasound Image Segmentation](#ultrasound-image-segmentation)
   - [(**) Medical breast ultrasound image segmentation by machine learning, Ultrasonics, 2019, paper](#medical-breast-ultrasound-image-segmentation-by-machine-learning-ultrasonics-2019-paper)
   - [(****) Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation, ISBI, 2017, paper](#cascaded-fully-convolutional-networks-for-automatic-prenatal-ultrasound-image-segmentation-isbi-2017-paper)
@@ -21,15 +22,15 @@
 
 **Method**
 
-![](../images/ultrasound_segmentation/xu_2019_methods_1.png)
+![](../../images/segmentation/ultrasound_segmentation/xu_2019_methods_1.png)
 
 
 **Result and Discusion**
 
-![](../images/ultrasound_segmentation/xu_2019_result_1.png)
-![](../images/ultrasound_segmentation/xu_2019_result_2.png)
-![](../images/ultrasound_segmentation/xu_2019_result_3.png)
-![](../images/ultrasound_segmentation/xu_2019_result_4.png)
+![](../../images/segmentation/ultrasound_segmentation/xu_2019_result_1.png)
+![](../../images/segmentation/ultrasound_segmentation/xu_2019_result_2.png)
+![](../../images/segmentation/ultrasound_segmentation/xu_2019_result_3.png)
+![](../../images/segmentation/ultrasound_segmentation/xu_2019_result_4.png)
 
 
 - the proposed automated segmentation method might have the potential to provide an objective reference for radiologists on breast image segmentation, so as to help breast cancer diagnosis and breast density assessments
@@ -57,13 +58,13 @@ accuracy
 - Additionally, we provide a new perspective to the classical Auto-Context scheme with the investigation on two types of join operators.
 
 
-![](../images/ultrasound_segmentation/casFCN_architecture.png)
+![](../../images/segmentation/ultrasound_segmentation/casFCN_architecture.png)
 
 **Result and Conclusion**
 
-![](../images/ultrasound_segmentation/casFCN_result_table-1.png)
+![](../../images/segmentation/ultrasound_segmentation/casFCN_result_table-1.png)
 
-![](../images/ultrasound_segmentation/casFCN_result_images.png)
+![](../../images/segmentation/ultrasound_segmentation/casFCN_result_images.png)
 
 - The proposed casFCN framework is general and can be easily extended to
 other US image segmentation tasks.
@@ -85,17 +86,17 @@ in TRUS images
 refine the features at each individual layer. 
 - We develop a 3D attention guided network with a novel scheme for TRUS prostate segmentation by harnessing the spatial contexts across deep and shallow layer
 
-![](../images/ultrasound_segmentation/attentive_features_architecture.png)
+![](../../images/segmentation/ultrasound_segmentation/attentive_features_architecture.png)
 
-![](../images/ultrasound_segmentation/attentive_features_aspp.png)
+![](../../images/segmentation/ultrasound_segmentation/attentive_features_aspp.png)
 
-![](../images/ultrasound_segmentation/attentive_features_attention_module.png)
+![](../../images/segmentation/ultrasound_segmentation/attentive_features_attention_module.png)
 
 **Result and Conclusion**
 
-![](../images/ultrasound_segmentation/attentive_features_results-1.png)
+![](../../images/segmentation/ultrasound_segmentation/attentive_features_results-1.png)
 
-![](../images/ultrasound_segmentation/attentive_features_results-2.png)
+![](../../images/segmentation/ultrasound_segmentation/attentive_features_results-2.png)
 
 - Our key idea is to select the useful complementary
 information from the multi-level features to refine the features at each individual layer.
@@ -113,16 +114,16 @@ process of the architectures
 - we propose a novel **channel attention module** with **multi-scale grid average pooling**, that is capable of improving the performance of CNNs for breast cancer segmentation in an ultrasound image.
 - we demonstrate that a channel attention module using grid average pooling instead of global average pooling can improve segmentation performance, by using the local information of an input image
 
-![](../images/ultrasound_segmentation/channel_attention_with_GAP.png)
+![](../../images/segmentation/ultrasound_segmentation/channel_attention_with_GAP.png)
 
-![](../images/ultrasound_segmentation/channel_attention_with_GRAP.png)
+![](../../images/segmentation/ultrasound_segmentation/channel_attention_with_GRAP.png)
 
-![](../images/ultrasound_segmentation/channel_attention_with_MGRAP_architecture.png)
+![](../../images/segmentation/ultrasound_segmentation/channel_attention_with_MGRAP_architecture.png)
 
 
 **Result and Conclusion**
 
-![](../images/ultrasound_segmentation/channel_attention_with_MGRAP_result.png)
+![](../../images/segmentation/ultrasound_segmentation/channel_attention_with_MGRAP_result.png)
 
 - The channel attention module with multi-scale grid average pooling (MSGRAP) allowed maintaining local and global information for the semantic segmentation of breast tumors in ultrasound images. In contrast, the channel attention module with global average pooling could only maintain global information
 
@@ -134,9 +135,9 @@ process of the architectures
 **Contribuction**
 - a **customized FCN** is integrated with the **auto-context model** for iteratively refining the prediction map.
   
-  ![](../images/ultrasound_segmentation/auto_context_FCN_architecture.png)
+  ![](../../images/segmentation/ultrasound_segmentation/auto_context_FCN_architecture.png)
 
 **Result and Conclusion**
 
-![](../images/ultrasound_segmentation//auto_context_results-1.png)
-![](../images/ultrasound_segmentation//auto_context_results-2.png)
+![](../../images/segmentation/ultrasound_segmentation//auto_context_results-1.png)
+![](../../images/segmentation/ultrasound_segmentation//auto_context_results-2.png)

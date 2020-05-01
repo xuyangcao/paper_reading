@@ -1,12 +1,14 @@
+- [Back to README](../../README.md)
+
 - [Segmentation Review](#segmentation-review)
-  - [Machine Learning Techniques for Biomedical Image Segmentation: An Overview of Technical Aspects and Introduction to State-of-Art Applications](#machine-learning-techniques-for-biomedical-image-segmentation-an-overview-of-technical-aspects-and-introduction-to-state-of-art-applications)
-  - [Understanding Deep Learning Techniques for Image Segmentation](#understanding-deep-learning-techniques-for-image-segmentation)
-  - [Deep Semantic Segmentation of Natural and Medical Images: A Review](#deep-semantic-segmentation-of-natural-and-medical-images-a-review)
+  - [(***) Machine Learning Techniques for Biomedical Image Segmentation: An Overview of Technical Aspects and Introduction to State-of-Art Applications, Medical Physics, 2019, paper](#machine-learning-techniques-for-biomedical-image-segmentation-an-overview-of-technical-aspects-and-introduction-to-state-of-art-applications-medical-physics-2019-paper)
+  - [(***) Understanding Deep Learning Techniques for Image Segmentation, ACM Computing Surveys, 2019, paper](#understanding-deep-learning-techniques-for-image-segmentation-acm-computing-surveys-2019-paper)
+  - [(***) Deep Semantic Segmentation of Natural and Medical Images: A Review, arXiv, 2019, paper](#deep-semantic-segmentation-of-natural-and-medical-images-a-review-arxiv-2019-paper)
 
 
 ## Segmentation Review
 
-### Machine Learning Techniques for Biomedical Image Segmentation: An Overview of Technical Aspects and Introduction to State-of-Art Applications
+### (***) Machine Learning Techniques for Biomedical Image Segmentation: An Overview of Technical Aspects and Introduction to State-of-Art Applications, Medical Physics, 2019, [paper](https://arxiv.org/abs/1911.02521)
 
 **Comparision between Traditional Methods and Deep Learning based Methods** 
 
@@ -31,7 +33,7 @@
 
 
 
-### Understanding Deep Learning Techniques for Image Segmentation
+### (***) Understanding Deep Learning Techniques for Image Segmentation, ACM Computing Surveys, 2019, [paper](https://arxiv.org/abs/1907.06119)
 
 **Defination:**
 
@@ -49,7 +51,7 @@ segmentation is a process of assigning a label to each pixel in the image such t
 
 **Application**
 
-![](../images/review/Application.png)
+![](../../images/review/segmentation/Application.png)
 
 **Comparization**
 
@@ -58,10 +60,10 @@ segmentation is a process of assigning a label to each pixel in the image such t
 | **Advantage**    |                                                                                                                                                                       | 1. automated feature learning |
 | **Disadvantage** | 1. the results dependent on the quality of feature extracted by the domain experts<br> 2. humans are bound to miss latent or abstract features for image segmentation |
 
-### Deep Semantic Segmentation of Natural and Medical Images: A Review
+### (***) Deep Semantic Segmentation of Natural and Medical Images: A Review, arXiv, 2019, [paper](https://arxiv.org/abs/1910.07655)
 
 **Categories:**
-![](../images/review/03_Categories.png)
+![](../../images/review/segmentation/03_Categories.png)
 
 **Potentional Difficulty**
 
