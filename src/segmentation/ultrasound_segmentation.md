@@ -1,6 +1,7 @@
 - [Back to README](../../README.md)
 
 - [Ultrasound Image Segmentation](#ultrasound-image-segmentation)
+  - [(***) Towards Automated Semantic Segmentation in Prenatal Volumetric Ultrasound, TMI, 2019, paper](#towards-automated-semantic-segmentation-in-prenatal-volumetric-ultrasound-tmi-2019-paper)
   - [(**) Medical breast ultrasound image segmentation by machine learning, Ultrasonics, 2019, paper](#medical-breast-ultrasound-image-segmentation-by-machine-learning-ultrasonics-2019-paper)
   - [(****) Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation, ISBI, 2017, paper](#cascaded-fully-convolutional-networks-for-automatic-prenatal-ultrasound-image-segmentation-isbi-2017-paper)
   - [(****) Deep Attentive Features for Prostate Segmentation in 3D Transrectal Ultrasound, TMI, 2019, paper](#deep-attentive-features-for-prostate-segmentation-in-3d-transrectal-ultrasound-tmi-2019-paper)
@@ -9,6 +10,39 @@
 
 
 ## Ultrasound Image Segmentation
+
+
+### (***) Towards Automated Semantic Segmentation in Prenatal Volumetric Ultrasound, TMI, 2019, [paper](https://ieeexplore.ieee.org/document/8418398/)
+
+**Problem**
+- the poor image quality, low contrast, boundary ambiguity and complex anatomy shapes conspire towards a great lack of efficient tools for the segmentation. 
+- It makes 3D ultrasound difficult to interpret and hinders the widespread of 3D ultrasound in obstetrics.
+
+**Contribuction**
+-  we propose the first and fully automatic framework to simultaneously segment multiple anatomical structures with intensive clinical interest, including fetus, gestational sac and placenta, which remains a rarely-studied
+and arduous challenge
+- we propose a composite architecture for dense labeling, in which a customized 3D fully convolutional network explores spatial intensity concurrency for initial labeling, while a multi-directional recurrent neural network (RNN) encodes spatial sequentiality to combat boundary ambiguity for significant refinement
+- we introduce a hierarchical deep supervision mechanism to boost the information flow within RNN and fit the latent sequence hierarchy in fine scales, and further improve the segmentation results
+
+
+**Method**
+
+![](../../images/segmentation/ultrasound_segmentation/towards_yang_method.png)
+
+**Result**
+
+![](../../images/segmentation/ultrasound_segmentation/towards_yang_result_1.png)
+![](../../images/segmentation/ultrasound_segmentation/towards_yang_result_2.png)
+
+
+**Limitation and Discusion**
+- Currently, our framework consists of 3D FCN and RNN, which are two complementary but separately trained parts.
+- However, currently, only ConvLSTM in 2D format has been reported for biomedical image segmentation
+- High time efficiency is expected for our task. However, confined by GPU memory, we resort to the overlap-tiling stitching strategy for both FCN and RNN to generate the prediction of whole volume
+- From the reproducibility experiments, we can see that different scanning directions and poses have impacts on the segmentation
+
+
+
 
 ### (**) Medical breast ultrasound image segmentation by machine learning, Ultrasonics, 2019, [paper](https://www.ncbi.nlm.nih.gov/pubmed/30029074)
 
@@ -20,6 +54,8 @@
 **Contribution**
 
 - In this paper, we propose to use convolutional neural networks (CNNs) for segmenting breast ultrasound images into four major tissues: skin, fibroglandular tissue, mass, and fatty tissue, on three-dimensional (3D) breast ultrasound images
+
+
 
 **Method**
 
