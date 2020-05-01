@@ -29,3 +29,8 @@
 - ## Classification Papers
   - ### [Architectures](src/classification/architecture.md)
   - ### [Visual Understanding](src/classification/visual_understanding.md)
+
+
+
+- ## Detection Papers
+  - ### [Detection](./src/detection/detection.md)
