@@ -1,13 +1,41 @@
 - [Ultrasound Image Segmentation](#ultrasound-image-segmentation)
-  - [Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation, ISBI, 2017](#cascaded-fully-convolutional-networks-for-automatic-prenatal-ultrasound-image-segmentation-isbi-2017)
-  - [Deep Attentive Features for Prostate Segmentation in 3D Transrectal Ultrasound, TMI, 2019](#deep-attentive-features-for-prostate-segmentation-in-3d-transrectal-ultrasound-tmi-2019)
-  - [Channel Attention Module with Multi-scale Grid Average Pooling for Breast Cancer Segmentation in an Ultrasound Image, IEEE transections on ultrasonics, 2020](#channel-attention-module-with-multi-scale-grid-average-pooling-for-breast-cancer-segmentation-in-an-ultrasound-image-ieee-transections-on-ultrasonics-2020)
-  - [Auto-context Fully Convolutional Network for Levator Hiatus Segmentation in Ultirasound Images, ISBI 2018](#auto-context-fully-convolutional-network-for-levator-hiatus-segmentation-in-ultirasound-images-isbi-2018)
+  - [(**) Medical breast ultrasound image segmentation by machine learning, Ultrasonics, 2019, paper](#medical-breast-ultrasound-image-segmentation-by-machine-learning-ultrasonics-2019-paper)
+  - [(****) Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation, ISBI, 2017, paper](#cascaded-fully-convolutional-networks-for-automatic-prenatal-ultrasound-image-segmentation-isbi-2017-paper)
+  - [(****) Deep Attentive Features for Prostate Segmentation in 3D Transrectal Ultrasound, TMI, 2019, paper](#deep-attentive-features-for-prostate-segmentation-in-3d-transrectal-ultrasound-tmi-2019-paper)
+  - [(***) Channel Attention Module with Multi-scale Grid Average Pooling for Breast Cancer Segmentation in an Ultrasound Image, IEEE transections on ultrasonics, 2020, paper](#channel-attention-module-with-multi-scale-grid-average-pooling-for-breast-cancer-segmentation-in-an-ultrasound-image-ieee-transections-on-ultrasonics-2020-paper)
+  - [(***) Auto-context Fully Convolutional Network for Levator Hiatus Segmentation in Ultirasound Images, ISBI 2018](#auto-context-fully-convolutional-network-for-levator-hiatus-segmentation-in-ultirasound-images-isbi-2018)
 
 
 ## Ultrasound Image Segmentation
 
-### Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation, ISBI, 2017
+### (**) Medical breast ultrasound image segmentation by machine learning, Ultrasonics, 2019, [paper](https://www.ncbi.nlm.nih.gov/pubmed/30029074)
+
+**Problem**
+
+-  manually segmenting the ultrasound images, which is skill and experience dependent, would lead to a subjective diagnosis
+-  it is time-consuming for radiologists to review hundreds of clinical images
+
+**Contribution**
+
+- In this paper, we propose to use convolutional neural networks (CNNs) for segmenting breast ultrasound images into four major tissues: skin, fibroglandular tissue, mass, and fatty tissue, on three-dimensional (3D) breast ultrasound images
+
+**Method**
+
+![](../images/ultrasound_segmentation/xu_2019_methods_1.png)
+
+
+**Result and Discusion**
+
+![](../images/ultrasound_segmentation/xu_2019_result_1.png)
+![](../images/ultrasound_segmentation/xu_2019_result_2.png)
+![](../images/ultrasound_segmentation/xu_2019_result_3.png)
+![](../images/ultrasound_segmentation/xu_2019_result_4.png)
+
+
+- the proposed automated segmentation method might have the potential to provide an objective reference for radiologists on breast image segmentation, so as to help breast cancer diagnosis and breast density assessments
+
+
+### (****) Cascaded Fully Convolutional Networks for automatic prenatal ultrasound image segmentation, ISBI, 2017, [paper](https://ieeexplore.ieee.org/document/7950607)
 
 **pros and cons of ultrasound imaging**
 
@@ -41,7 +69,7 @@ accuracy
 other US image segmentation tasks.
 
 
-### Deep Attentive Features for Prostate Segmentation in 3D Transrectal Ultrasound, TMI, 2019
+### (****) Deep Attentive Features for Prostate Segmentation in 3D Transrectal Ultrasound, TMI, 2019, [paper](https://ieeexplore.ieee.org/document/8698868)
 
 **Problem**
 - manual outlining is tedious, time-consuming and often irreproducible, even for experienced physicians.
@@ -73,7 +101,7 @@ refine the features at each individual layer.
 information from the multi-level features to refine the features at each individual layer.
 - Experiments on challenging TRUS volumes show that our segmentation using deep attentive features achieves satisfactory performance. In addition, the proposed attention mechanism is a general strategy to aggregate multi-level features and has the potential to be used for other medical image segmentation and detection tasks.
 
-### Channel Attention Module with Multi-scale Grid Average Pooling for Breast Cancer Segmentation in an Ultrasound Image, IEEE transections on ultrasonics, 2020 
+### (***) Channel Attention Module with Multi-scale Grid Average Pooling for Breast Cancer Segmentation in an Ultrasound Image, IEEE transections on ultrasonics, 2020, [paper](https://www.ncbi.nlm.nih.gov/pubmed/32054578)
 
 **Problem**
 -  recently proposed methods such as FCN, SegNet and U-Net still need to be further improved to provide better semantic segmentation when diagnosing breast cancer by ultrasound imaging, because of their low performance.
@@ -98,7 +126,7 @@ process of the architectures
 
 - The channel attention module with multi-scale grid average pooling (MSGRAP) allowed maintaining local and global information for the semantic segmentation of breast tumors in ultrasound images. In contrast, the channel attention module with global average pooling could only maintain global information
 
-### Auto-context Fully Convolutional Network for Levator Hiatus Segmentation in Ultirasound Images, ISBI 2018
+### (***) Auto-context Fully Convolutional Network for Levator Hiatus Segmentation in Ultirasound Images, ISBI 2018
 
 **Problem**
 - Developing automatic methods for the levator hiatus (LH) segmentation is a necessary and crucial image-processing issue that needs to be resolved to achieve more objective and efficient female pelvic floor dysfunction (FPFD) examinations.
