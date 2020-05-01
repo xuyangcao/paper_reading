@@ -1,14 +1,14 @@
 - [Uncertainty Theory and Applications](#uncertainty-theory-and-applications)
   - [Theory](#theory)
     - [Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning, ICML 2016, Paper](#dropout-as-a-bayesian-approximation-representing-model-uncertainty-in-deep-learning-icml-2016-paper)
+    - [Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation, MICCAI 2019, Paper](#assessing-reliability-and-challenges-of-uncertainty-estimations-for-medical-image-segmentation-miccai-2019-paper)
   - [Classification](#classification)
   - [Segmentation](#segmentation)
-    - [Evaluatioon](#evaluatioon)
-      - [Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation, MICCAI 2019, Paper](#assessing-reliability-and-challenges-of-uncertainty-estimations-for-medical-image-segmentation-miccai-2019-paper)
-    - [Sanity Check](#sanity-check)
+    - [Quality Prediction](#quality-prediction)
       - [Towards safe deep learning: accurately quantifying biomarker uncertainty in neural network predictions, MICCAI 2018, Paper](#towards-safe-deep-learning-accurately-quantifying-biomarker-uncertainty-in-neural-network-predictions-miccai-2018-paper)
+      - [Leveraging Uncertainty Estimates for Predicting Segmentation Quality, arXiv 2018, Paper](#leveraging-uncertainty-estimates-for-predicting-segmentation-quality-arxiv-2018-paper)
       - [Uncertainty-driven Sanity Check: Application to Postoperative Brain Tumor Cavity Segmentation, MIDL 2018, Paper](#uncertainty-driven-sanity-check-application-to-postoperative-brain-tumor-cavity-segmentation-midl-2018-paper)
-    - [Intervene](#intervene)
+    - [Intervene Predictions](#intervene-predictions)
       - [Exploring Uncertainty Measures in Deep Networks for Multiple Sclerosis Lesion Detection and Segmentation, MICCAI, 2018, Paper](#exploring-uncertainty-measures-in-deep-networks-for-multiple-sclerosis-lesion-detection-and-segmentation-miccai-2018-paper)
       - [MILD-Net: Minimal Information Loss Dilated Network for Gland Instance Segmentation in Colon Histology Images, Medical Image Analysis, 2019, Paper](#mild-net-minimal-information-loss-dilated-network-for-gland-instance-segmentation-in-colon-histology-images-medical-image-analysis-2019-paper)
   - [Domain Adaption](#domain-adaption)
@@ -38,21 +38,7 @@
 - We have built a probabilistic interpretation of dropout which allowed us to obtain model uncertainty out of existing deep learning models.
 - We have studied the properties of this uncertainty in detail, and demonstrated possible applications, interleaving Bayesian models and deep learning models together.
 
-
-## Classification
-
-
-
-
-## Segmentation
-
-
-
-
-
-
-### Evaluatioon
-#### Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation, MICCAI 2019, [Paper](https://arxiv.org/abs/1907.03338)
+### Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation, MICCAI 2019, [Paper](https://arxiv.org/abs/1907.03338)
 
 **Problem**
 - despite improvements in accuracy, the robustness aspects of these systems call for significant improvements for a successful clinical integration of these technologies, where each data point corresponds to an individual patient
@@ -96,7 +82,22 @@ their differences cannot be fully decoupled and neglected when analyzing the
 uncertainty
 
 
-### Sanity Check
+## Classification
+
+
+
+
+## Segmentation
+
+
+
+
+
+
+
+
+
+### Quality Prediction
 
 #### Towards safe deep learning: accurately quantifying biomarker uncertainty in neural network predictions, MICCAI 2018, [Paper](https://arxiv.org/abs/1806.08640)
 
@@ -118,6 +119,27 @@ uncertainty
 - In conclusion, we have shown how to produce calibrated confidence intervals for volumetric analysis, with a non-disruptive extension to a typical deeplearning pipeline
 
 ![](../images/uncertainty/cali_result.png)
+
+
+#### Leveraging Uncertainty Estimates for Predicting Segmentation Quality, arXiv 2018, [Paper](https://arxiv.org/abs/1807.00502)
+
+**Problem**
+- despite the recent successes reported in the literature, we have yet to see the widespread adoption of deep learning in clinical settings
+- One possible reason for this delay could be the lack of suitable uncertainty estimates
+
+**Contribution**
+
+- We propose learning spatial uncertainty maps for each segmentation, which can then be used to improve our prediction of the quality of the segmentation
+
+**Method**
+
+![](../images/uncertainty/quality_method_1.png)
+
+**Results and Discusion**
+
+- Require futher reading ....
+
+
 
 
 
@@ -153,7 +175,7 @@ $$dbt = \sum_{i-1}^{N}\delta\{k_i = 1\}w_ih_i$$
 
 
 
-### Intervene
+### Intervene Predictions
 
 #### Exploring Uncertainty Measures in Deep Networks for Multiple Sclerosis Lesion Detection and Segmentation, MICCAI, 2018, [Paper](https://arxiv.org/abs/1808.01200v1)
 
