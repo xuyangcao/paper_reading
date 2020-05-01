@@ -1,10 +1,13 @@
 - [Uncertainty Theory and Applications](#uncertainty-theory-and-applications)
   - [Theory](#theory)
     - [Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning, ICML 2016, Paper](#dropout-as-a-bayesian-approximation-representing-model-uncertainty-in-deep-learning-icml-2016-paper)
-  - [Instance Level](#instance-level)
+  - [Classification](#classification)
+  - [Segmentation](#segmentation)
+    - [Towards safe deep learning: accurately quantifying biomarker uncertainty in neural network predictions, MICCAI 2018, Paper](#towards-safe-deep-learning-accurately-quantifying-biomarker-uncertainty-in-neural-network-predictions-miccai-2018-paper)
     - [Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation, MICCAI 2019, Paper](#assessing-reliability-and-challenges-of-uncertainty-estimations-for-medical-image-segmentation-miccai-2019-paper)
     - [Exploring Uncertainty Measures in Deep Networks for Multiple Sclerosis Lesion Detection and Segmentation, MICCAI, 2018, Paper](#exploring-uncertainty-measures-in-deep-networks-for-multiple-sclerosis-lesion-detection-and-segmentation-miccai-2018-paper)
     - [MILD-Net: Minimal Information Loss Dilated Network for Gland Instance Segmentation in Colon Histology Images, Medical Image Analysis, 2019, Paper](#mild-net-minimal-information-loss-dilated-network-for-gland-instance-segmentation-in-colon-histology-images-medical-image-analysis-2019-paper)
+  - [Domain Adaption](#domain-adaption)
 
 
 
@@ -32,7 +35,37 @@
 - We have studied the properties of this uncertainty in detail, and demonstrated possible applications, interleaving Bayesian models and deep learning models together.
 
 
-## Instance Level
+## Classification
+
+
+
+
+## Segmentation
+
+### Towards safe deep learning: accurately quantifying biomarker uncertainty in neural network predictions, MICCAI 2018, [Paper](https://arxiv.org/abs/1806.08640)
+
+**Problem**
+
+- Automated medical image segmentation, specifically using deep learning, has shown outstanding performance in semantic segmentation tasks. 
+- However, these methods rarely quantify their uncertainty, which may lead to errors in downstream analysis.
+
+
+**Contribution**
+- In this work we propose to use Bayesian neural networks to quantify uncertainty within the domain of semantic segmentation.
+- We also propose a method to convert voxel-wise segmentation uncertainty into volumetric uncertainty, and calibrate the accuracy and reliability of confidence intervals of derived measurements. 
+
+
+**Result and Discusion**
+
+- Empirically, we have found that the model with dropout in every layer produced the most stable variance estimates, whilst being computationally simple to implement.
+- As noise increases, we see the segmentation error increase: also, we see the estimated volume reducing with added noise.
+- In conclusion, we have shown how to produce calibrated confidence intervals for volumetric analysis, with a non-disruptive extension to a typical deeplearning pipeline
+
+![](../images/uncertainty/cali_result.png)
+
+
+
+
 
 ### Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation, MICCAI 2019, [Paper](https://arxiv.org/abs/1907.03338)
 
@@ -156,3 +189,6 @@ cancer increases
 would not make a diagnosis from areas of ambiguity
 
 ![](../images/uncertainty/mild_net_result_1.png)
+
+
+## Domain Adaption
