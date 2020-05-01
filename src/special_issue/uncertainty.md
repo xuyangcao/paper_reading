@@ -13,6 +13,7 @@
     - [Intervene Predictions](#intervene-predictions)
       - [(****) Exploring Uncertainty Measures in Deep Networks for Multiple Sclerosis Lesion Detection and Segmentation, MICCAI, 2018, Paper](#exploring-uncertainty-measures-in-deep-networks-for-multiple-sclerosis-lesion-detection-and-segmentation-miccai-2018-paper)
       - [(****) MILD-Net: Minimal Information Loss Dilated Network for Gland Instance Segmentation in Colon Histology Images, Medical Image Analysis, 2019, Paper](#mild-net-minimal-information-loss-dilated-network-for-gland-instance-segmentation-in-colon-histology-images-medical-image-analysis-2019-paper)
+      - [(****) Uncertainty-aware Self-ensembling Model for Semi-supervised 3D Left Atrium Segmentation, MICCAI 2019, code](#uncertainty-aware-self-ensembling-model-for-semi-supervised-3d-left-atrium-segmentation-miccai-2019-code)
   - [Domain Adaption](#domain-adaption)
 
 
@@ -258,6 +259,36 @@ cancer increases
 would not make a diagnosis from areas of ambiguity
 
 ![](../../images/special_issue/uncertainty/mild_net_result_1.png)
+
+
+#### (****) Uncertainty-aware Self-ensembling Model for Semi-supervised 3D Left Atrium Segmentation, MICCAI 2019, [code](https://github.com/yulequan/UA-MT)
+
+**Problem**
+
+- In the medical imaging domain, however, it is expensive and tedious to delineate reliable annotations from 3D medical images in a slice-by-slice manner by experienced experts
+- Since unlabeled data is generally abundant, we focus on studying semi-supervised approach on LA segmentation by leveraging both limited labeled data and abundant unlabeled data.
+
+
+**Contribuction**
+
+- we present a novel uncertainty-aware semi-supervised learning framework for left atrium segmentation from 3D MR images by additionally leveraging the unlabeled data
+- we design the uncertaintyaware mean teacher (UA-MT) framework, where the student model gradually learns from the meaningful and reliable targets by exploiting the uncertainty information of the teacher model
+
+**Method**
+
+![](../../images/special_issue/uncertainty/uamt_method_1.png)
+
+
+**Result and Conclusion**
+
+![](../../images/special_issue/uncertainty/uamt_result_1.png)
+![](../../images/special_issue/uncertainty/uamt_result_2.png)
+![](../../images/special_issue/uncertainty/uamt_result_3.png)
+
+- Our method encourages the segmentation to be consistent for the same input under different perturbations to use the unlabeled data
+- More importantly, we explore the model uncertainty to improve the quality of the target
+- The comparison with other semi-supervised methods confirm the effectiveness of our method
+
 
 
 ## Domain Adaption

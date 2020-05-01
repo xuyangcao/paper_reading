@@ -10,7 +10,6 @@
   - ### [Semi-Supervised Learning](src/special_issue/semi_supervised_learning.md)
 
 
-
 - ## Segmentation Papers
 
   - ### [Data Augmentation](src/segmentation/data_augmentation.md)
@@ -30,7 +29,3 @@
 - ## Classification Papers
   - ### [Architectures](src/classification/architecture.md)
   - ### [Visual Understanding](src/classification/visual_understanding.md)
-
-
-
-
