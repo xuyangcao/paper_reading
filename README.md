@@ -14,7 +14,7 @@
 
   - ### [Data Augmentation](src/segmentation/data_augmentation.md)
 
-
+  - ### [Multi-Task Segmentation](./src/segmentation/mulit_task.md)
   - ### [Weakly Supervised Segmentation](src/segmentation/weakly_supervised_learning.md)
 
   - ### [Transfer learning](src/segmentation/transfer_learning.md)
@@ -29,7 +29,6 @@
 - ## Classification Papers
   - ### [Architectures](src/classification/architecture.md)
   - ### [Visual Understanding](src/classification/visual_understanding.md)
-
 
 
 - ## Detection Papers
